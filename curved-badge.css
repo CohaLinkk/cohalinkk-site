@@ -1,0 +1,209 @@
+/* 
+===========================================
+COMPOSANT CURVED BADGE - Documentation
+===========================================
+
+Utilisation simple :
+<span class="curved-badge">Mon texte</span>
+
+Variantes de taille :
+- .curved-badge-small    (pour mots courts)
+- .curved-badge-medium   (pour mots moyens comme "tous")
+- .curved-badge-large    (pour mots longs comme "colocation")
+- .curved-badge-largexl  (pour mots très longs, +30% de largeur)
+- Par défaut = medium
+
+Couleurs disponibles :
+- .orange     (fond orange)
+- .green      (fond vert)  
+- .blue       (fond bleu)
+- .light-blue (fond bleu clair)
+- Par défaut  (fond noir)
+
+Couleurs de texte :
+- .text-dark (texte foncé)
+- .text-blue (texte bleu)
+- Par défaut (texte blanc)
+
+Exemples :
+<span class="curved-badge-large orange text-blue">Colocation</span>
+<span class="curved-badge-largexl green text-dark">Très long texte</span>
+<span class="curved-badge-medium green text-dark">Tous</span>
+<span class="curved-badge-small light-blue">OK</span>
+
+Compatible avec Tailwind :
+<span class="curved-badge-large orange transform -rotate-1">Incliné</span>
+===========================================
+*/
+
+/* Base commune pour tous les badges */
+.curved-badge, .curved-badge-small, .curved-badge-medium, .curved-badge-large, .curved-badge-largexl {
+  --badge-bg-color: #121926;
+  --badge-text-color: #ffffff;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  color: var(--badge-text-color);
+  font-weight: 600;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  white-space: nowrap;
+  transform-origin: center;
+}
+
+/* Taille par défaut (medium) */
+.curved-badge {
+  background-image: url("data:image/svg+xml,%3Csvg width='280' height='102' viewBox='0 0 280 102' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 21.8C0 9.9 7.43111 0.076 14.9953 0.718C41.6645 2.72 100.397 6.46 140 6.46C179.603 6.46 238.335 2.72 264.005 0.718C271.569 0.076 280 9.9 280 21.8V79.8C280 91.7 271.569 101.6 264.005 100.96C238.336 98.95 179.603 95.22 140 95.22C100.397 95.22 41.6645 98.95 14.9953 100.96C7.43112 101.6 0 91.7 0 79.8L0 21.8Z' fill='%23121926'/%3E%3C/svg%3E");
+  min-width: 140px;
+  height: 84px;
+}
+
+/* Taille small */
+.curved-badge-small {
+  background-image: url("data:image/svg+xml,%3Csvg width='200' height='96' viewBox='0 0 200 96' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20.6C0 9.4 5.43111 0.076 11.9953 0.718C29.6645 2.72 68.397 6.46 100 6.46C131.603 6.46 170.335 2.72 188.005 0.718C194.569 0.076 200 9.4 200 20.6V75C200 86.1 194.569 95.5 188.005 94.84C170.336 92.83 131.603 89.1 100 89.1C68.397 89.1 29.6645 92.83 11.9953 94.84C5.43112 95.5 0 86.1 0 75L0 20.6Z' fill='%23121926'/%3E%3C/svg%3E");
+  min-width: 100px;
+  height: 78px;
+}
+
+/* Taille medium */
+.curved-badge-medium {
+  background-image: url("data:image/svg+xml,%3Csvg width='280' height='102' viewBox='0 0 280 102' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 21.8C0 9.9 7.43111 0.076 14.9953 0.718C41.6645 2.72 100.397 6.46 140 6.46C179.603 6.46 238.335 2.72 264.005 0.718C271.569 0.076 280 9.9 280 21.8V79.8C280 91.7 271.569 101.6 264.005 100.96C238.336 98.95 179.603 95.22 140 95.22C100.397 95.22 41.6645 98.95 14.9953 100.96C7.43112 101.6 0 91.7 0 79.8L0 21.8Z' fill='%23121926'/%3E%3C/svg%3E");
+  min-width: 140px;
+  height: 84px;
+}
+
+/* Taille large */
+.curved-badge-large {
+  background-image: url("data:image/svg+xml,%3Csvg width='360' height='96' viewBox='0 0 360 96' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20.7C0 9.3 9.43111 0.076 18.9953 0.718C53.6645 2.72 138.397 6.46 180 6.46C221.603 6.46 306.335 2.72 341.005 0.718C350.569 0.076 360 9.3 360 20.7V75C360 86.4 350.569 95.1 341.005 94.44C306.336 92.47 221.603 88.74 180 88.74C138.397 88.74 53.6645 92.47 18.9953 94.44C9.43112 95.1 0 86.4 0 75L0 20.7Z' fill='%23121926'/%3E%3C/svg%3E");
+  min-width: 180px;
+  height: 78px;
+}
+
+/* Taille largexl */
+.curved-badge-largexl {
+  background-image: url("data:image/svg+xml,%3Csvg width='468' height='96' viewBox='0 0 468 96' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20.7C0 9.3 12.43111 0.076 24.9953 0.718C69.6645 2.72 179.397 6.46 234 6.46C288.603 6.46 398.335 2.72 443.005 0.718C455.569 0.076 468 9.3 468 20.7V75C468 86.4 455.569 95.1 443.005 94.44C398.336 92.47 288.603 88.74 234 88.74C179.397 88.74 69.6645 92.47 24.9953 94.44C12.43112 95.1 0 86.4 0 75L0 20.7Z' fill='%23121926'/%3E%3C/svg%3E");
+  min-width: 234px;
+  height: 78px;
+}
+
+/* Variantes de couleurs pour l'ancienne classe curved-badge (maintenant medium) */
+.curved-badge.orange {
+  --badge-bg-color: #ffb84d;
+  background-image: url("data:image/svg+xml,%3Csvg width='280' height='102' viewBox='0 0 280 102' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 21.8C0 9.9 7.43111 0.076 14.9953 0.718C41.6645 2.72 100.397 6.46 140 6.46C179.603 6.46 238.335 2.72 264.005 0.718C271.569 0.076 280 9.9 280 21.8V79.8C280 91.7 271.569 101.6 264.005 100.96C238.336 98.95 179.603 95.22 140 95.22C100.397 95.22 41.6645 98.95 14.9953 100.96C7.43112 101.6 0 91.7 0 79.8L0 21.8Z' fill='%23FFB84D'/%3E%3C/svg%3E");
+}
+
+.curved-badge.green {
+  --badge-bg-color: #4caf50;
+  background-image: url("data:image/svg+xml,%3Csvg width='280' height='102' viewBox='0 0 280 102' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 21.8C0 9.9 7.43111 0.076 14.9953 0.718C41.6645 2.72 100.397 6.46 140 6.46C179.603 6.46 238.335 2.72 264.005 0.718C271.569 0.076 280 9.9 280 21.8V79.8C280 91.7 271.569 101.6 264.005 100.96C238.336 98.95 179.603 95.22 140 95.22C100.397 95.22 41.6645 98.95 14.9953 100.96C7.43112 101.6 0 91.7 0 79.8L0 21.8Z' fill='%234CAF50'/%3E%3C/svg%3E");
+}
+
+.curved-badge.blue {
+  --badge-bg-color: #3b5ef7;
+  background-image: url("data:image/svg+xml,%3Csvg width='280' height='102' viewBox='0 0 280 102' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 21.8C0 9.9 7.43111 0.076 14.9953 0.718C41.6645 2.72 100.397 6.46 140 6.46C179.603 6.46 238.335 2.72 264.005 0.718C271.569 0.076 280 9.9 280 21.8V79.8C280 91.7 271.569 101.6 264.005 100.96C238.336 98.95 179.603 95.22 140 95.22C100.397 95.22 41.6645 98.95 14.9953 100.96C7.43112 101.6 0 91.7 0 79.8L0 21.8Z' fill='%233B5EF7'/%3E%3C/svg%3E");
+}
+
+.curved-badge.light-blue {
+  --badge-bg-color: #EFF3FF;
+  background-image: url("data:image/svg+xml,%3Csvg width='280' height='102' viewBox='0 0 280 102' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 21.8C0 9.9 7.43111 0.076 14.9953 0.718C41.6645 2.72 100.397 6.46 140 6.46C179.603 6.46 238.335 2.72 264.005 0.718C271.569 0.076 280 9.9 280 21.8V79.8C280 91.7 271.569 101.6 264.005 100.96C238.336 98.95 179.603 95.22 140 95.22C100.397 95.22 41.6645 98.95 14.9953 100.96C7.43112 101.6 0 91.7 0 79.8L0 21.8Z' fill='%23EFF3FF'/%3E%3C/svg%3E");
+}
+
+/* Variantes de couleurs pour large */
+.curved-badge-large.orange {
+  --badge-bg-color: #ffb84d;
+  background-image: url("data:image/svg+xml,%3Csvg width='360' height='96' viewBox='0 0 360 96' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20.7C0 9.3 9.43111 0.076 18.9953 0.718C53.6645 2.72 138.397 6.46 180 6.46C221.603 6.46 306.335 2.72 341.005 0.718C350.569 0.076 360 9.3 360 20.7V75C360 86.4 350.569 95.1 341.005 94.44C306.336 92.47 221.603 88.74 180 88.74C138.397 88.74 53.6645 92.47 18.9953 94.44C9.43112 95.1 0 86.4 0 75L0 20.7Z' fill='%23FFB84D'/%3E%3C/svg%3E");
+}
+
+.curved-badge-large.green {
+  --badge-bg-color: #4caf50;
+  background-image: url("data:image/svg+xml,%3Csvg width='360' height='96' viewBox='0 0 360 96' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20.7C0 9.3 9.43111 0.076 18.9953 0.718C53.6645 2.72 138.397 6.46 180 6.46C221.603 6.46 306.335 2.72 341.005 0.718C350.569 0.076 360 9.3 360 20.7V75C360 86.4 350.569 95.1 341.005 94.44C306.336 92.47 221.603 88.74 180 88.74C138.397 88.74 53.6645 92.47 18.9953 94.44C9.43112 95.1 0 86.4 0 75L0 20.7Z' fill='%234CAF50'/%3E%3C/svg%3E");
+}
+
+.curved-badge-large.blue {
+  --badge-bg-color: #3b5ef7;
+  background-image: url("data:image/svg+xml,%3Csvg width='360' height='96' viewBox='0 0 360 96' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20.7C0 9.3 9.43111 0.076 18.9953 0.718C53.6645 2.72 138.397 6.46 180 6.46C221.603 6.46 306.335 2.72 341.005 0.718C350.569 0.076 360 9.3 360 20.7V75C360 86.4 350.569 95.1 341.005 94.44C306.336 92.47 221.603 88.74 180 88.74C138.397 88.74 53.6645 92.47 18.9953 94.44C9.43112 95.1 0 86.4 0 75L0 20.7Z' fill='%233B5EF7'/%3E%3C/svg%3E");
+}
+
+.curved-badge-large.light-blue {
+  --badge-bg-color: #EFF3FF;
+  background-image: url("data:image/svg+xml,%3Csvg width='360' height='96' viewBox='0 0 360 96' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20.7C0 9.3 9.43111 0.076 18.9953 0.718C53.6645 2.72 138.397 6.46 180 6.46C221.603 6.46 306.335 2.72 341.005 0.718C350.569 0.076 360 9.3 360 20.7V75C360 86.4 350.569 95.1 341.005 94.44C306.336 92.47 221.603 88.74 180 88.74C138.397 88.74 53.6645 92.47 18.9953 94.44C9.43112 95.1 0 86.4 0 75L0 20.7Z' fill='%23EFF3FF'/%3E%3C/svg%3E");
+}
+
+/* Variantes de couleurs pour largexl */
+.curved-badge-largexl.orange {
+  --badge-bg-color: #ffb84d;
+  background-image: url("data:image/svg+xml,%3Csvg width='468' height='96' viewBox='0 0 468 96' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20.7C0 9.3 12.43111 0.076 24.9953 0.718C69.6645 2.72 179.397 6.46 234 6.46C288.603 6.46 398.335 2.72 443.005 0.718C455.569 0.076 468 9.3 468 20.7V75C468 86.4 455.569 95.1 443.005 94.44C398.336 92.47 288.603 88.74 234 88.74C179.397 88.74 69.6645 92.47 24.9953 94.44C12.43112 95.1 0 86.4 0 75L0 20.7Z' fill='%23FFB84D'/%3E%3C/svg%3E");
+}
+
+.curved-badge-largexl.green {
+  --badge-bg-color: #4caf50;
+  background-image: url("data:image/svg+xml,%3Csvg width='468' height='96' viewBox='0 0 468 96' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20.7C0 9.3 12.43111 0.076 24.9953 0.718C69.6645 2.72 179.397 6.46 234 6.46C288.603 6.46 398.335 2.72 443.005 0.718C455.569 0.076 468 9.3 468 20.7V75C468 86.4 455.569 95.1 443.005 94.44C398.336 92.47 288.603 88.74 234 88.74C179.397 88.74 69.6645 92.47 24.9953 94.44C12.43112 95.1 0 86.4 0 75L0 20.7Z' fill='%234CAF50'/%3E%3C/svg%3E");
+}
+
+.curved-badge-largexl.blue {
+  --badge-bg-color: #3b5ef7;
+  background-image: url("data:image/svg+xml,%3Csvg width='468' height='96' viewBox='0 0 468 96' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20.7C0 9.3 12.43111 0.076 24.9953 0.718C69.6645 2.72 179.397 6.46 234 6.46C288.603 6.46 398.335 2.72 443.005 0.718C455.569 0.076 468 9.3 468 20.7V75C468 86.4 455.569 95.1 443.005 94.44C398.336 92.47 288.603 88.74 234 88.74C179.397 88.74 69.6645 92.47 24.9953 94.44C12.43112 95.1 0 86.4 0 75L0 20.7Z' fill='%233B5EF7'/%3E%3C/svg%3E");
+}
+
+.curved-badge-largexl.light-blue {
+  --badge-bg-color: #EFF3FF;
+  background-image: url("data:image/svg+xml,%3Csvg width='468' height='96' viewBox='0 0 468 96' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20.7C0 9.3 12.43111 0.076 24.9953 0.718C69.6645 2.72 179.397 6.46 234 6.46C288.603 6.46 398.335 2.72 443.005 0.718C455.569 0.076 468 9.3 468 20.7V75C468 86.4 455.569 95.1 443.005 94.44C398.336 92.47 288.603 88.74 234 88.74C179.397 88.74 69.6645 92.47 24.9953 94.44C12.43112 95.1 0 86.4 0 75L0 20.7Z' fill='%23EFF3FF'/%3E%3C/svg%3E");
+}
+
+/* Variantes de couleurs pour medium */
+.curved-badge-medium.orange {
+  --badge-bg-color: #ffb84d;
+  background-image: url("data:image/svg+xml,%3Csvg width='280' height='102' viewBox='0 0 280 102' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 21.8C0 9.9 7.43111 0.076 14.9953 0.718C41.6645 2.72 100.397 6.46 140 6.46C179.603 6.46 238.335 2.72 264.005 0.718C271.569 0.076 280 9.9 280 21.8V79.8C280 91.7 271.569 101.6 264.005 100.96C238.336 98.95 179.603 95.22 140 95.22C100.397 95.22 41.6645 98.95 14.9953 100.96C7.43112 101.6 0 91.7 0 79.8L0 21.8Z' fill='%23FFB84D'/%3E%3C/svg%3E");
+}
+
+.curved-badge-medium.green {
+  --badge-bg-color: #4caf50;
+  background-image: url("data:image/svg+xml,%3Csvg width='280' height='102' viewBox='0 0 280 102' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 21.8C0 9.9 7.43111 0.076 14.9953 0.718C41.6645 2.72 100.397 6.46 140 6.46C179.603 6.46 238.335 2.72 264.005 0.718C271.569 0.076 280 9.9 280 21.8V79.8C280 91.7 271.569 101.6 264.005 100.96C238.336 98.95 179.603 95.22 140 95.22C100.397 95.22 41.6645 98.95 14.9953 100.96C7.43112 101.6 0 91.7 0 79.8L0 21.8Z' fill='%234CAF50'/%3E%3C/svg%3E");
+}
+
+.curved-badge-medium.blue {
+  --badge-bg-color: #3b5ef7;
+  background-image: url("data:image/svg+xml,%3Csvg width='280' height='102' viewBox='0 0 280 102' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 21.8C0 9.9 7.43111 0.076 14.9953 0.718C41.6645 2.72 100.397 6.46 140 6.46C179.603 6.46 238.335 2.72 264.005 0.718C271.569 0.076 280 9.9 280 21.8V79.8C280 91.7 271.569 101.6 264.005 100.96C238.336 98.95 179.603 95.22 140 95.22C100.397 95.22 41.6645 98.95 14.9953 100.96C7.43112 101.6 0 91.7 0 79.8L0 21.8Z' fill='%233B5EF7'/%3E%3C/svg%3E");
+}
+
+.curved-badge-medium.light-blue {
+  --badge-bg-color: #EFF3FF;
+  background-image: url("data:image/svg+xml,%3Csvg width='280' height='102' viewBox='0 0 280 102' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 21.8C0 9.9 7.43111 0.076 14.9953 0.718C41.6645 2.72 100.397 6.46 140 6.46C179.603 6.46 238.335 2.72 264.005 0.718C271.569 0.076 280 9.9 280 21.8V79.8C280 91.7 271.569 101.6 264.005 100.96C238.336 98.95 179.603 95.22 140 95.22C100.397 95.22 41.6645 98.95 14.9953 100.96C7.43112 101.6 0 91.7 0 79.8L0 21.8Z' fill='%23EFF3FF'/%3E%3C/svg%3E");
+}
+
+/* Variantes de couleurs pour small */
+.curved-badge-small.orange {
+  --badge-bg-color: #ffb84d;
+  background-image: url("data:image/svg+xml,%3Csvg width='200' height='96' viewBox='0 0 200 96' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20.6C0 9.4 5.43111 0.076 11.9953 0.718C29.6645 2.72 68.397 6.46 100 6.46C131.603 6.46 170.335 2.72 188.005 0.718C194.569 0.076 200 9.4 200 20.6V75C200 86.1 194.569 95.5 188.005 94.84C170.336 92.83 131.603 89.1 100 89.1C68.397 89.1 29.6645 92.83 11.9953 94.84C5.43112 95.5 0 86.1 0 75L0 20.6Z' fill='%23FFB84D'/%3E%3C/svg%3E");
+}
+
+.curved-badge-small.green {
+  --badge-bg-color: #4caf50;
+  background-image: url("data:image/svg+xml,%3Csvg width='200' height='96' viewBox='0 0 200 96' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20.6C0 9.4 5.43111 0.076 11.9953 0.718C29.6645 2.72 68.397 6.46 100 6.46C131.603 6.46 170.335 2.72 188.005 0.718C194.569 0.076 200 9.4 200 20.6V75C200 86.1 194.569 95.5 188.005 94.84C170.336 92.83 131.603 89.1 100 89.1C68.397 89.1 29.6645 92.83 11.9953 94.84C5.43112 95.5 0 86.1 0 75L0 20.6Z' fill='%234CAF50'/%3E%3C/svg%3E");
+}
+
+.curved-badge-small.blue {
+  --badge-bg-color: #3b5ef7;
+  background-image: url("data:image/svg+xml,%3Csvg width='200' height='96' viewBox='0 0 200 96' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20.6C0 9.4 5.43111 0.076 11.9953 0.718C29.6645 2.72 68.397 6.46 100 6.46C131.603 6.46 170.335 2.72 188.005 0.718C194.569 0.076 200 9.4 200 20.6V75C200 86.1 194.569 95.5 188.005 94.84C170.336 92.83 131.603 89.1 100 89.1C68.397 89.1 29.6645 92.83 11.9953 94.84C5.43112 95.5 0 86.1 0 75L0 20.6Z' fill='%233B5EF7'/%3E%3C/svg%3E");
+}
+
+.curved-badge-small.light-blue {
+  --badge-bg-color: #EFF3FF;
+  background-image: url("data:image/svg+xml,%3Csvg width='200' height='96' viewBox='0 0 200 96' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20.6C0 9.4 5.43111 0.076 11.9953 0.718C29.6645 2.72 68.397 6.46 100 6.46C131.603 6.46 170.335 2.72 188.005 0.718C194.569 0.076 200 9.4 200 20.6V75C200 86.1 194.569 95.5 188.005 94.84C170.336 92.83 131.603 89.1 100 89.1C68.397 89.1 29.6645 92.83 11.9953 94.84C5.43112 95.5 0 86.1 0 75L0 20.6Z' fill='%23EFF3FF'/%3E%3C/svg%3E");
+}
+
+/* Couleurs de texte pour toutes les tailles */
+.curved-badge.text-dark, .curved-badge-medium.text-dark, .curved-badge-large.text-dark, .curved-badge-largexl.text-dark, .curved-badge-small.text-dark {
+  --badge-text-color: #1f2937;
+}
+
+.curved-badge.text-blue, .curved-badge-medium.text-blue, .curved-badge-large.text-blue, .curved-badge-largexl.text-blue, .curved-badge-small.text-blue {
+  --badge-text-color: #1e40af;
+} 
+
+.curved-badge.text-light-blue, .curved-badge-medium.text-light-blue, .curved-badge-large.text-light-blue, .curved-badge-largexl.text-light-blue, .curved-badge-small.text-light-blue {
+  --badge-text-color: #1e40af;
+}

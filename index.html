@@ -1,0 +1,2538 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-RRTB0GM5SN"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-RRTB0GM5SN");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/images/icon.png" />
+    <link rel="canonical" href="https://cohalinkk.fr/" />
+    <meta
+      name="description"
+      content="CohaLinkk - Réinvente la colocation pour tous. Une app simple, sûre et efficace pour mettre en relation colocataires compatibles et propriétaires responsables."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cohalinkk.fr/" />
+    <meta
+      property="og:title"
+      content="CohaLinkk - Réinvente la colocation pour tous"
+    />
+    <meta
+      property="og:description"
+      content="Une app simple, sûre et efficace pour mettre en relation colocataires compatibles et propriétaires responsables."
+    />
+    <meta
+      property="og:image"
+      content="https://cohalinkk.fr/assets/images/logo_cohalinkk_bleu.png"
+    />
+    <meta property="og:site_name" content="CohaLinkk" />
+    <meta property="og:locale" content="fr_FR" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://cohalinkk.fr/" />
+    <meta
+      property="twitter:title"
+      content="CohaLinkk - Réinvente la colocation pour tous"
+    />
+    <meta
+      property="twitter:description"
+      content="Une app simple, sûre et efficace pour mettre en relation colocataires compatibles et propriétaires responsables."
+    />
+    <meta
+      property="twitter:image"
+      content="https://cohalinkk.fr/assets/images/logo_cohalinkk_bleu.png"
+    />
+
+    <!-- Autres métadonnées SEO -->
+    <meta
+      name="keywords"
+      content="colocation, logement, colocataire, propriétaire, app mobile, location, partage, logement étudiant, colocation responsable"
+    />
+    <meta name="author" content="CohaLinkk" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="fr" />
+    <meta name="geo.region" content="FR" />
+    <meta name="geo.placename" content="France" />
+
+    <title>CohaLinkk - Réinvente la colocation pour tous</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Préchargement des ressources critiques -->
+    <link rel="preload" href="curved-badge.css" as="style" />
+    <link
+      rel="preload"
+      href="./assets/images/logo_cohalinkk_bleu.png"
+      as="image"
+    />
+
+    <!-- Optimisation des polices -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+    /></noscript>
+
+    <link rel="stylesheet" href="curved-badge.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Calendly Popup Widget -->
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+      async
+    ></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "coha-blue": "#3B5EF7",
+              "coha-orange": "#FFB84D",
+              "coha-green": "#4CAF50",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Structured Data JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "CohaLinkk",
+        "url": "https://cohalinkk.fr",
+        "logo": "https://cohalinkk.fr/assets/images/logo_cohalinkk_bleu.png",
+        "description": "CohaLinkk réinvente la colocation pour tous. Une app simple, sûre et efficace pour mettre en relation colocataires compatibles et propriétaires responsables.",
+        "foundingDate": "2024",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "FR"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/company/cohalinkk/",
+          "https://www.instagram.com/cohalinkk/",
+          "https://www.facebook.com/profile.php?id=61577775392202",
+          "https://www.tiktok.com/@cohalinkk"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "availableLanguage": "French"
+        },
+        "offers": {
+          "@type": "Offer",
+          "description": "Application de colocation avec matching intelligent et messagerie sécurisée",
+          "category": "Application mobile de colocation"
+        }
+      }
+    </script>
+  </head>
+  <body class="font-sans bg-gray-50">
+    <!-- Container principal -->
+    <section
+      class="bg-gradient-to-tr from-blue-800 to-blue-600 relative overflow-hidden rounded-3xl m-4 lg:m-10"
+    >
+      <!-- Réseaux sociaux intégrés dans la section hero (desktop uniquement) -->
+      <div
+        class="hidden lg:block absolute top-6 left-6 z-20 social-hero-integration"
+      >
+        <div
+          class="bg-white/15 backdrop-blur-sm rounded-2xl px-4 py-3 shadow-lg border border-white/20"
+        >
+          <div class="flex space-x-3">
+            <!-- LinkedIn -->
+            <a
+              href="https://www.linkedin.com/company/cohalinkk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group social-hero-icon"
+              aria-label="Suivez-nous sur LinkedIn"
+            >
+              <div
+                class="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-md hover:shadow-lg transform hover:scale-110 transition-all duration-300 group-hover:rotate-3"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="white"
+                >
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+              </div>
+            </a>
+
+            <!-- Instagram -->
+            <a
+              href="https://www.instagram.com/cohalinkk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group social-hero-icon"
+              aria-label="Suivez-nous sur Instagram"
+            >
+              <div
+                class="w-10 h-10 bg-gradient-to-r from-pink-500 to-purple-600 rounded-xl flex items-center justify-center shadow-md hover:shadow-lg transform hover:scale-110 transition-all duration-300 group-hover:-rotate-3"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0,0,256,256"
+                  style="fill: #ffffff"
+                >
+                  <g transform="scale(5.12,5.12)">
+                    <path
+                      d="M16,3c-7.17,0 -13,5.83 -13,13v18c0,7.17 5.83,13 13,13h18c7.17,0 13,-5.83 13,-13v-18c0,-7.17 -5.83,-13 -13,-13zM37,11c1.1,0 2,0.9 2,2c0,1.1 -0.9,2 -2,2c-1.1,0 -2,-0.9 -2,-2c0,-1.1 0.9,-2 2,-2zM25,14c6.07,0 11,4.93 11,11c0,6.07 -4.93,11 -11,11c-6.07,0 -11,-4.93 -11,-11c0,-6.07 4.93,-11 11,-11zM25,16c-4.96,0 -9,4.04 -9,9c0,4.96 4.04,9 9,9c4.96,0 9,-4.04 9,-9c0,-4.96 -4.04,-9 -9,-9z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </a>
+
+            <!-- Facebook -->
+            <a
+              href="https://www.facebook.com/profile.php?id=61577775392202"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group social-hero-icon"
+              aria-label="Suivez-nous sur Facebook"
+            >
+              <div
+                class="w-10 h-10 bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl flex items-center justify-center shadow-md hover:shadow-lg transform hover:scale-110 transition-all duration-300 group-hover:rotate-3"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="white"
+                >
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  />
+                </svg>
+              </div>
+            </a>
+
+            <!-- TikTok -->
+            <a
+              href="https://www.tiktok.com/@cohalinkk"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group social-hero-icon"
+              aria-label="Suivez-nous sur TikTok"
+            >
+              <div
+                class="w-10 h-10 bg-gradient-to-r from-gray-800 to-gray-900 rounded-xl flex items-center justify-center shadow-md hover:shadow-lg transform hover:scale-110 transition-all duration-300 group-hover:-rotate-3"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="white"
+                >
+                  <path
+                    d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Image des personnes (cercle) - positionnée à gauche, masquée sur mobile -->
+
+      <div
+        class="hidden lg:block absolute left-0 top-1/2 transform -translate-y-1/2 w-80 h-80 z-0"
+      >
+        <img
+          src="./assets/gens2.png"
+          alt="Personnes en colocation"
+          class="h-full"
+        />
+      </div>
+      <!-- Formes décoratives en arrière-plan, réduites sur mobile -->
+      <div class="absolute inset-0 opacity-10">
+        <div
+          class="floating-blob absolute top-10 lg:top-20 right-10 lg:right-20 w-48 lg:w-96 h-48 lg:h-96 bg-white rounded-full blur-3xl"
+        ></div>
+        <div
+          class="floating-blob-2 absolute bottom-10 lg:bottom-20 left-10 lg:left-20 w-36 lg:w-72 h-36 lg:h-72 bg-white rounded-full blur-3xl"
+        ></div>
+      </div>
+      <!-- Koala masqué sur mobile -->
+      <div class="hidden lg:block absolute top-0 right-0">
+        <!-- import svg from ./assets/koa.svg -->
+        <img
+          src="./assets/koala.svg"
+          alt="Koala mascotte CohaLinkk"
+          class="w-full h-full opacity-0"
+          id="koala-image"
+        />
+      </div>
+
+      <div class="container mx-auto px-4 py-8 relative z-10">
+        <!-- Header avec logo -->
+        <header class="text-center items-center opacity-0" id="hero-logo">
+          <svg
+            class="w-64 h-auto mx-auto"
+            id="Calque_1"
+            data-name="Calque 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 2000 659.75"
+          >
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: #ffffff;
+                }
+              </style>
+            </defs>
+            <g>
+              <g>
+                <path
+                  class="cls-1"
+                  d="M1379.25,442.15v-228.14h33.95v228.14h-33.95Z"
+                />
+                <g>
+                  <path
+                    class="cls-1"
+                    d="M1434.93,255.09v-41.08h33.95v41.08h-33.95ZM1434.93,442.15v-167.03h33.95v167.03h-33.95Z"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M1604.67,442.15v-102.86c0-30.21-11.54-39.72-34.29-39.72-33.95,0-45.49,21.39-45.49,56.02v86.57h-33.95v-167.03h32.59v33.27c9.85-25.8,31.23-37.68,58.39-37.68,32.93,0,56.69,17.65,56.69,57.71v113.73h-33.95Z"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M1770.34,442.15l-44.81-81.48-31.23,30.21v51.26h-34.29v-228.14h34.29v137.83l73.67-76.72h41.76l-59.75,62.13,58.39,104.9h-38.02Z"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M1932.62,442.15l-44.81-81.48-31.23,30.21v51.26h-34.29v-228.14h34.29v137.83l73.67-76.72h41.76l-59.75,62.13,58.39,104.9h-38.02Z"
+                  />
+                </g>
+              </g>
+              <g>
+                <path
+                  class="cls-1"
+                  d="M862.69,378.54c-4.66,37.97-33.97,63.61-71.61,63.61-42.3,0-71.6-29.64-71.6-88.26s29.31-84.26,72.94-84.26c40.3,0,67.94,24.31,70.61,62.94h-23.65c-2.66-27.64-21.31-43.3-47.29-43.3-28.64,0-49.29,18.32-49.29,64.28s20.65,68.94,48.29,68.94c24.98,0,44.96-16.65,47.96-43.96h23.65Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M875.68,355.89c0-51.95,30.97-86.26,80.26-86.26s78.93,33.97,78.93,86.26-30.64,86.26-78.93,86.26-80.26-35.3-80.26-86.26ZM1011.56,355.89c0-41.63-20.31-66.28-55.62-66.28s-56.29,24.65-56.29,66.28,20.32,66.61,56.29,66.61,55.62-24.98,55.62-66.61Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M1171.42,437.82v-103.58c0-35.97-15.32-45.63-42.3-45.63-40.96,0-51.29,37.63-51.29,73.27v75.94h-23.31v-223.81h23.31v99.58c7.66-30.64,33.97-43.96,58.62-43.96,34.97,0,58.28,15.99,58.28,57.28v110.9h-23.31Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M1331.28,437.82c-.67-2-1-27.31-1.33-29.97-7.66,19.65-31.64,34.3-60.95,34.3-39.3,0-55.62-18.32-55.62-45.63,0-41.96,27.97-49.29,70.94-53.95,27.64-3,43.63-5.33,44.96-15.32,0-24.98-12.66-39.3-43.63-39.3s-43.96,14.99-45.29,39.3h-21.98c.66-33.97,18.32-57.62,68.27-57.62s66.61,23.31,66.61,64.61v103.58h-21.98ZM1329.95,348.9c-5,6.33-20.98,6.66-45.29,9.66-31.64,4-47.96,9.99-47.96,35.64,0,19.32,10.99,30.64,37.3,30.64,27.64,0,53.96-17.65,55.62-46.63l.33-29.31Z"
+                />
+              </g>
+            </g>
+            <g>
+              <g>
+                <path
+                  class="cls-1"
+                  d="M453.58,298.82c-7.06.03-12.76,5.77-12.73,12.83l.63,159.57c0,.44-.16.83-.48,1.14-.31.31-.73.46-1.15.47l-145.9-1.17c-3.76-.06-7.53,1.19-10.56,3.44l-63.64,47.27v-32.69c0-9.65-7.82-17.47-17.47-17.47h-24.55c-.89,0-1.61-.72-1.61-1.57l.43-156.18c.02-7.06-5.69-12.8-12.75-12.82h0c-7.06-.02-12.8,5.69-12.82,12.75l-.43,156.22c0,14.99,12.19,27.18,27.18,27.18h16.45v40.08c0,6.3,3.13,12.33,8.55,15.55,2.81,1.67,5.91,2.49,8.99,2.49,3.68,0,7.34-1.17,10.44-3.47l74.29-55.19,143.18,1.15c7.35.09,14.18-2.74,19.36-7.88,5.18-5.14,8.04-11.99,8.04-19.34l-.63-159.63c-.03-7.06-5.77-12.76-12.83-12.73h0Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M579.24,222.17c-4.04-29.98-28.75-53.46-62.94-59.82-25.1-4.67-49.17.23-69.62,14.18-10.27,7-19.5,16.22-27.43,27.26l-92.13-83.11c-10.64-9.59-26.66-9.56-37.23.06l-89.41,80.88c-7.31-9.46-15.63-17.44-24.76-23.67-20.44-13.95-44.52-18.85-69.62-14.18-34.63,6.44-58.9,32.1-61.81,65.35-1.27,14.54,1.83,28.05,8.47,39.1-3.25,6.14-4.93,12.53-5.02,19.15-.22,18.1,11.6,31.56,19.19,38.31.08,8.96,2.14,23.74,13.2,35.29,9.34,9.76,22.59,14.68,39.48,14.68.03,0,.06,0,.1,0,5.35,0,12.23-1.45,12.23-11.39,0-12.78-8.47-14.11-13.2-14.18-9.11-.13-15.84-2.37-20.05-6.7-7.72-7.95-6.01-21.69-6.01-21.73l1.2-7.82-6.63-4.59c-3.83-2.65-13.55-11.45-13.9-20.87,0-.25-.04-.5-.04-.76.14-7.72,6.84-14.98,14.2-20.66.02-.02.04-.03.07-.05,3.53-2.72,7.43-10.59,1.75-17.69-5.17-6.47-12.69-6.09-16.66-3.07-.44.33-.87.66-1.29,1-1.62-5.35-2.04-10.89-1.61-15.79,1.43-16.33,13.03-37.24,41.02-42.45,14.35-2.67,46.21-3.81,70.82,29.8l-62.32,56.37c-5.24,4.74-5.64,12.82-.9,18.06h0c4.74,5.24,12.82,5.64,18.06.9l58.08-52.54,19.78-17.89,92.78-83.93c.84-.76,2.1-.76,2.94-.01l96.08,86.68,18.33,16.53,55.16,49.76c5.24,4.73,13.33,4.31,18.05-.93h0c4.73-5.24,4.31-13.33-.93-18.05l-58.43-52.71c24.91-37.34,58.52-36.22,73.37-33.45,28.09,5.23,40.26,23.11,42.28,38.1.95,7.03-.17,13.84-3.04,20.01-1.08-.85-2.35-1.51-3.35-2.52-3.64-3.66-13.6-6.65-19.29,1.87-5.04,7.57-1.42,15.62,4.92,19.28.02.01.03.02.05.04,7.48,5.47,14.74,12.64,15.75,20.35.07.52.13,1.05.13,1.58.17,9.71-10,18.9-13.88,21.59l-6.68,4.32,1.18,8.04c.02.14,1.73,13.88-6,21.83-4.22,4.34-10.97,6.59-20.13,6.7-4.68.06-12.29,4.23-12.29,12.75,0,9.94,6.04,12.81,11.4,12.82.03,0,.06,0,.1,0,16.89,0,30.14-4.92,39.48-14.68,11.06-11.55,13.12-26.33,13.2-35.29,7.58-6.75,19.41-20.21,19.19-38.31-.09-7.06-2.01-13.85-5.69-20.36,8.64-12.53,12.42-27.61,10.28-43.43Z"
+                />
+              </g>
+              <path
+                class="cls-1"
+                d="M282.07,425.99c-1.65-14.3,9.96-2.48,17.96-1.53,3.46.23,6.35-2.1,9.37-4.1,4.07-2.5,7.09-6.86,10.63-8.19,4.84-1.33,7.84,3.89,7.11,8.5-2.62,21.66-42.21,22.31-45.03,5.57"
+              />
+              <path
+                class="cls-1"
+                d="M247.46,333.06c-1.13-12.35-13.16-22.86-25.62-21.98-10.17.71-18.93,10.5-20.36,20.29-6.41,44,49.2,36.95,45.98,1.69ZM232.81,345.27c-1.57,5.53-6.97,7.58-12.34,6.54-6.77-1.31-5.17-14.22.19-15.82,4.34-1.3,13.17,5.68,12.14,9.28Z"
+              />
+              <path
+                class="cls-1"
+                d="M412.6,349.27c-8.45,5.97-12.43-2.3-17.45-5.56-5.41-3.51-11.78-1.37-17.46,1.33-6.16,2.93-10.76,12.08-18.46,4.69-4.95-4.75,1.67-10.55,5.24-13.68,5.36-4.69,12.43-8.66,19.61-9.59,10.61-1.37,23.22,3.97,28.37,13.55,0,0,4.18,6.41.15,9.26Z"
+              />
+              <path
+                class="cls-1"
+                d="M303.17,312.18c16.72-1.23,27.12,22.12,28.3,32.28,1.78,15.33,1.13,43.36-24.46,45.26-45.22,3.35-35.38-42.98-23.28-63.29,3.74-6.27,9.74-13.53,19.44-14.25Z"
+              />
+              <path
+                class="cls-1"
+                d="M428.23,171.35h0c4.92-5.37,4.53-13.7-.87-18.59l-55.04-49.09c-5.41-4.89-13.78-4.5-18.7.87h0c-4.92,5.37-4.53,13.7.87,18.59l55.04,49.09c5.41,4.89,13.78,4.5,18.7-.87Z"
+              />
+            </g>
+          </svg>
+        </header>
+
+        <!-- Contenu principal -->
+        <div
+          class="flex flex-col lg:grid lg:grid-cols-3 gap-8 lg:gap-12 items-center max-w-7xl mx-auto pb-16 lg:pb-32 relative z-10"
+        >
+          <!-- Contenu principal : Texte et boutons -->
+          <div
+            class="text-center lg:text-center lg:col-span-2 lg:ml-80 order-2 lg:order-1 opacity-0"
+            id="hero-content"
+          >
+            <!-- Titre principal -->
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl text-white mb-6 leading-tight"
+            >
+              Réinvente la
+              <br />
+              <span
+                class="curved-badge-large orange text-blue transform -rotate-3"
+              >
+                colocation
+              </span>
+              <span class="text-white"> pour </span>
+              <span
+                class="curved-badge-medium green text-blue transform rotate-3"
+              >
+                tous
+              </span>
+            </h2>
+
+            <!-- Description -->
+            <p class="text-lg lg:text-xl text-blue-100 mb-4 leading-relaxed">
+              Une app simple, sûre et efficace pour mettre en relation
+            </p>
+            <p class="text-lg lg:text-xl text-blue-100 mb-8 leading-relaxed">
+              colocataires
+              <span
+                class="text-coha-orange"
+                style="font-family: 'Kaushan Script', cursive"
+                >Compatibles</span
+              >
+              et propriétaires
+              <span
+                class="text-coha-green"
+                style="font-family: 'Kaushan Script', cursive"
+                >Responsables</span
+              >.
+            </p>
+
+            <!-- Boutons -->
+            <div
+              class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-center"
+            >
+              <a
+                href="./colocataire.html"
+                class="bg-white text-blue-700 space-x-2 px-4 lg:px-6 py-2 rounded-full font-semibold text-base lg:text-lg hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center"
+                aria-label="Découvrir l'espace colocataire"
+              >
+                <p>Colocataire</p>
+                <span
+                  class="bg-blue-800 text-white px-1 py-1 rounded-2xl transform -rotate-1"
+                  aria-hidden="true"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-arrow-right-icon lucide-arrow-right"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </span>
+              </a>
+              <a
+                href="./proprietaire.html"
+                class="bg-white space-x-2 border-2 border-white text-blue-700 px-4 lg:px-6 py-2 rounded-full font-semibold text-base lg:text-lg hover:bg-white hover:text-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center"
+                aria-label="Découvrir l'espace propriétaire"
+              >
+                <p class="hidden sm:block">Propriétaire</p>
+                <p class="sm:hidden">Propriétaire</p>
+                <span
+                  class="bg-blue-800 text-white px-1 py-1 rounded-2xl transform -rotate-1"
+                  aria-hidden="true"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-arrow-right-icon lucide-arrow-right"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+
+            <!-- Boutons téléchargement de l'application -->
+            <div class="flex justify-center space-x-3 mt-12">
+              <a
+                href="https://apps.apple.com/fr/app/cohalinkk/id6747823273?itscg=30200&itsct=apps_box_badge&mttnsubad=6747823273"
+                style="display: inline-block"
+                target="_blank"
+              >
+                <img
+                  src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/fr-fr?releaseDate=1757116800"
+                  alt="Download on the App Store"
+                  class="w-32 h-10 sm:w-40 sm:h-12 lg:w-44 lg:h-14 object-contain"
+                />
+              </a>
+
+              <a
+                href="https://play.google.com/store/apps/details?id=fr.cohalinkk.app"
+                style="display: inline-block"
+                target="_blank"
+              >
+                <svg
+                  version="1.1"
+                  id="svg1694"
+                  viewBox="0 0 861.33331 255.2092"
+                  class="w-32 h-10 sm:w-40 sm:h-12 lg:w-44 lg:h-14 object-contain"
+                  sodipodi:docname="google-play-badge-fr.eps"
+                  inkscape:export-filename="google-play-badge-fr.svg"
+                  inkscape:export-xdpi="96"
+                  inkscape:export-ydpi="96"
+                  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:svg="http://www.w3.org/2000/svg"
+                >
+                  <defs id="defs1698">
+                    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath1712">
+                      <path
+                        d="M 0,2207.03 H 6460 V 292.961 H 0 Z"
+                        id="path1710"
+                      />
+                    </clipPath>
+                    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath1734">
+                      <path
+                        d="M 0,2207.04 H 6460 V 292.961 H 0 Z"
+                        id="path1732"
+                      />
+                    </clipPath>
+                  </defs>
+                  <sodipodi:namedview
+                    id="namedview1696"
+                    pagecolor="#ffffff"
+                    bordercolor="#000000"
+                    borderopacity="0.25"
+                    inkscape:showpageshadow="2"
+                    inkscape:pageopacity="0.0"
+                    inkscape:pagecheckerboard="0"
+                    inkscape:deskcolor="#d1d1d1"
+                    showgrid="false"
+                  />
+                  <g
+                    id="g1702"
+                    inkscape:groupmode="layer"
+                    inkscape:label="Page 1"
+                    transform="matrix(1.3333333,0,0,-1.3333333,0,294.27066)"
+                  >
+                    <g id="g1704" transform="scale(0.1)">
+                      <g id="g1706">
+                        <g id="g1708" clip-path="url(#clipPath1712)">
+                          <path
+                            d="M 6220.74,292.969 H 239.262 C 107.668,292.969 0,400.629 0,532.23 v 1435.55 c 0,131.6 107.668,239.26 239.262,239.26 H 6220.74 c 131.59,0 239.26,-107.66 239.26,-239.26 V 532.23 c 0,-131.601 -107.67,-239.261 -239.26,-239.261"
+                            style="
+                              fill: #100f0d;
+                              fill-opacity: 1;
+                              fill-rule: nonzero;
+                              stroke: none;
+                            "
+                            id="path1714"
+                          />
+                          <path
+                            d="M 6220.74,2207.03 H 239.262 C 107.668,2207.03 0,2099.36 0,1967.77 V 532.219 C 0,400.621 107.668,292.961 239.262,292.961 H 6220.74 c 131.59,0 239.26,107.66 239.26,239.258 V 1967.77 c 0,131.59 -107.67,239.26 -239.26,239.26 m 0,-38.28 c 110.83,0 200.98,-90.15 200.98,-200.98 V 532.219 c 0,-110.828 -90.15,-200.981 -200.98,-200.981 H 239.262 c -110.828,0 -200.9768,90.153 -200.9768,200.981 V 1967.77 c 0,110.83 90.1488,200.98 200.9768,200.98 H 6220.74"
+                            style="
+                              fill: #a2a2a1;
+                              fill-opacity: 1;
+                              fill-rule: nonzero;
+                              stroke: none;
+                            "
+                            id="path1716"
+                          />
+                          <path
+                            d="m 5117.09,771.48 h 89.29 v 598.19 h -89.29 z m 804.24,382.72 -102.35,-259.36 h -3.07 L 5709.68,1154.2 H 5613.5 L 5772.8,791.719 5681.98,590.07 h 93.12 l 245.53,564.13 z M 5414.97,839.43 c -29.29,0 -70.06,14.64 -70.06,50.808 0,46.184 50.77,63.844 94.65,63.844 39.24,0 57.71,-8.473 81.59,-20 -6.94,-55.422 -54.65,-94.652 -106.18,-94.652 m 10.76,327.83 c -64.65,0 -131.64,-28.47 -159.34,-91.54 l 79.28,-33.12 c 16.94,33.12 48.48,43.89 81.59,43.89 46.18,0 93.12,-27.71 93.89,-76.95 v -6.17 c -16.17,9.23 -50.82,23.06 -93.12,23.06 -85.42,0 -172.41,-46.942 -172.41,-134.649 0,-80.062 70.05,-131.601 148.53,-131.601 60.05,0 93.12,26.898 113.94,58.48 h 3.06 v -46.18 h 86.18 v 229.36 c 0,106.18 -79.24,165.42 -181.6,165.42 m -551.83,-85.89 h -127 v 205.09 h 127 c 66.76,0 104.65,-55.32 104.65,-102.55 0,-46.37 -37.89,-102.54 -104.65,-102.54 m -2.29,288.3 H 4657.66 V 771.48 h 89.24 v 226.622 h 124.71 c 98.96,0 196.24,71.688 196.24,185.808 0,114.13 -97.28,185.76 -196.24,185.76 M 3704.93,839.328 c -61.68,0 -113.31,51.633 -113.31,122.551 0,71.681 51.63,124.131 113.31,124.131 60.91,0 108.67,-52.45 108.67,-124.131 0,-70.918 -47.76,-122.551 -108.67,-122.551 m 102.5,281.372 h -3.06 c -20.05,23.88 -58.57,45.51 -107.14,45.51 -101.79,0 -195.05,-89.44 -195.05,-204.331 0,-114.078 93.26,-202.75 195.05,-202.75 48.57,0 87.09,21.582 107.14,46.269 h 3.06 v -29.277 c 0,-77.902 -41.59,-119.492 -108.67,-119.492 -54.75,0 -88.67,39.293 -102.55,72.453 l -77.86,-32.402 c 22.35,-53.969 81.74,-120.25 180.41,-120.25 104.84,0 193.51,61.679 193.51,211.992 v 365.438 h -84.84 z M 3953.9,771.48 h 89.44 v 598.24 h -89.44 z m 221.27,197.34 c -2.29,78.67 60.91,118.72 106.37,118.72 35.51,0 65.56,-17.71 75.56,-43.16 z m 277.54,67.85 c -16.99,45.51 -68.62,129.54 -174.23,129.54 -104.84,0 -191.93,-82.5 -191.93,-203.569 0,-114.071 86.33,-203.512 201.94,-203.512 93.31,0 147.23,57.043 169.63,90.199 l -69.38,46.274 c -23.17,-33.922 -54.75,-56.274 -100.25,-56.274 -45.47,0 -77.86,20.82 -98.68,61.633 l 272.14,112.599 z m -2168.07,67.04 v -86.32 h 206.58 c -6.18,-48.57 -22.35,-84.031 -46.99,-108.671 -30.1,-30.098 -77.14,-63.219 -159.59,-63.219 -127.24,0 -226.67,102.5 -226.67,229.74 0,127.19 99.43,229.69 226.67,229.69 68.62,0 118.72,-26.94 155.71,-61.63 l 60.91,60.86 c -51.67,49.34 -120.25,87.14 -216.62,87.14 -174.23,0 -320.7,-141.88 -320.7,-316.06 0,-174.279 146.47,-316.111 320.7,-316.111 94.03,0 164.95,30.871 220.45,88.672 57.04,57.039 74.8,137.187 74.8,201.979 0,20.05 -1.54,38.52 -4.65,53.93 z m 530.1,-264.382 c -61.63,0 -114.84,50.871 -114.84,123.313 0,73.269 53.21,123.369 114.84,123.369 61.68,0 114.89,-50.1 114.89,-123.369 0,-72.442 -53.21,-123.313 -114.89,-123.313 m 0,326.882 c -112.55,0 -204.28,-85.61 -204.28,-203.569 0,-117.141 91.73,-203.512 204.28,-203.512 112.55,0 204.33,86.371 204.33,203.512 0,117.959 -91.78,203.569 -204.33,203.569 m 445.69,-326.882 c -61.67,0 -114.89,50.871 -114.89,123.313 0,73.269 53.22,123.369 114.89,123.369 61.69,0 114.85,-50.1 114.85,-123.369 0,-72.442 -53.16,-123.313 -114.85,-123.313 m 0,326.882 c -112.54,0 -204.28,-85.61 -204.28,-203.569 0,-117.141 91.74,-203.512 204.28,-203.512 112.55,0 204.28,86.371 204.28,203.512 0,117.959 -91.73,203.569 -204.28,203.569"
+                            style="
+                              fill: #ffffff;
+                              fill-opacity: 1;
+                              fill-rule: nonzero;
+                              stroke: none;
+                            "
+                            id="path1718"
+                          />
+                          <path
+                            d="M 991.355,1277.56 481.879,736.828 c 0.047,-0.09 0.047,-0.238 0.098,-0.328 15.644,-58.719 69.238,-101.93 132.882,-101.93 25.457,0 49.336,6.891 69.817,18.95 l 1.625,0.96 573.459,330.891 -268.405,292.189"
+                            style="
+                              fill: #eb3131;
+                              fill-opacity: 1;
+                              fill-rule: nonzero;
+                              stroke: none;
+                            "
+                            id="path1720"
+                          />
+                          <path
+                            d="m 1506.77,1369.63 -0.48,0.34 -247.59,143.51 -278.927,-248.21 279.927,-279.84 246.25,142.07 c 43.16,23.36 72.5,68.86 72.5,121.31 0,52.16 -28.91,97.42 -71.68,120.82"
+                            style="
+                              fill: #f6b60b;
+                              fill-opacity: 1;
+                              fill-rule: nonzero;
+                              stroke: none;
+                            "
+                            id="path1722"
+                          />
+                          <path
+                            d="m 481.871,1763.11 c -3.066,-11.29 -4.691,-23.16 -4.691,-35.41 V 772.191 c 0,-12.25 1.625,-24.113 4.738,-35.363 l 526.942,526.902 -526.989,499.38"
+                            style="
+                              fill: #5778c5;
+                              fill-opacity: 1;
+                              fill-rule: nonzero;
+                              stroke: none;
+                            "
+                            id="path1724"
+                          />
+                          <path
+                            d="m 995.121,1249.95 263.659,263.62 -572.784,332.09 c -20.816,12.49 -45.125,19.67 -71.109,19.67 -63.641,0 -117.332,-43.31 -132.981,-102.07 0,-0.05 -0.047,-0.1 -0.047,-0.15 l 513.262,-513.16"
+                            style="
+                              fill: #3bad49;
+                              fill-opacity: 1;
+                              fill-rule: nonzero;
+                              stroke: none;
+                            "
+                            id="path1726"
+                          />
+                        </g>
+                      </g>
+                      <g id="g1728">
+                        <g id="g1730" clip-path="url(#clipPath1734)">
+                          <path
+                            d="m 2093.55,1621.88 c 33.86,0 60.16,9.36 78.89,28.09 18.73,18.74 28.1,44.61 28.1,77.64 0,33.03 -9.37,58.92 -28.1,77.65 -18.73,18.73 -45.03,28.1 -78.89,28.1 h -48.3 v -211.48 z m -94.09,254.78 h 95.34 c 30.81,0 57.66,-6.25 80.55,-18.74 22.9,-12.49 40.52,-30.04 52.87,-52.66 12.36,-22.63 18.53,-48.5 18.53,-77.65 0,-29.14 -6.17,-55.02 -18.53,-77.64 -12.35,-22.62 -29.97,-40.17 -52.87,-52.66 -22.89,-12.49 -49.74,-18.73 -80.55,-18.73 h -95.34 v 298.08"
+                            style="
+                              fill: #ffffff;
+                              fill-opacity: 1;
+                              fill-rule: nonzero;
+                              stroke: none;
+                            "
+                            id="path1736"
+                          />
+                          <path
+                            d="m 2306.28,1876.66 h 45.79 v -298.08 h -45.79 v 298.08"
+                            style="
+                              fill: #ffffff;
+                              fill-opacity: 1;
+                              fill-rule: nonzero;
+                              stroke: none;
+                            "
+                            id="path1738"
+                          />
+                          <path
+                            d="m 2447.82,1593.56 c -19.7,14.43 -33.44,34.69 -41.21,60.78 l 43.29,17.49 c 4.45,-16.65 12.36,-30.26 23.73,-40.8 11.38,-10.55 25.12,-15.82 41.22,-15.82 14.98,0 27.69,3.88 38.09,11.66 10.41,7.77 15.61,18.45 15.61,32.05 0,12.49 -4.58,22.83 -13.74,31.02 -9.16,8.19 -24.98,16.17 -47.46,23.94 l -18.73,6.66 c -20.26,7.21 -37.12,17.28 -50.58,30.18 -13.46,12.91 -20.19,30.04 -20.19,51.42 0,14.7 3.96,28.31 11.87,40.79 7.91,12.49 19,22.34 33.3,29.56 14.29,7.22 30.46,10.83 48.5,10.83 25.81,0 46.49,-6.32 62.03,-18.94 15.54,-12.64 26.09,-26.86 31.65,-42.68 l -41.23,-17.49 c -2.77,10 -8.6,18.6 -17.48,25.82 -8.88,7.21 -20.4,10.82 -34.56,10.82 -13.59,0 -25.11,-3.61 -34.55,-10.82 -9.43,-7.22 -14.15,-16.38 -14.15,-27.48 0,-10.27 4.23,-18.8 12.7,-25.6 8.45,-6.81 21.57,-13.25 39.33,-19.36 l 19.15,-6.66 c 25.54,-8.89 45.24,-20.4 59.13,-34.55 13.87,-14.16 20.81,-33.04 20.81,-56.62 0,-19.43 -4.93,-35.74 -14.78,-48.92 -9.85,-13.19 -22.48,-22.96 -37.88,-29.35 -15.41,-6.38 -31.16,-9.57 -47.26,-9.57 -24.7,0 -46.9,7.21 -66.61,21.64"
+                            style="
+                              fill: #ffffff;
+                              fill-opacity: 1;
+                              fill-rule: nonzero;
+                              stroke: none;
+                            "
+                            id="path1740"
+                          />
+                          <path
+                            d="m 2777.96,1737.61 c 15.26,0 27.54,4.78 36.84,14.36 9.3,9.58 13.95,20.74 13.95,33.51 0,12.77 -4.65,23.94 -13.95,33.52 -9.3,9.57 -21.58,14.36 -36.84,14.36 h -57.87 v -95.75 z m -103.66,139.05 h 102.41 c 17.76,0 34.06,-3.89 48.92,-11.66 14.84,-7.78 26.64,-18.6 35.39,-32.47 8.74,-13.89 13.11,-29.57 13.11,-47.05 0,-17.48 -4.37,-33.16 -13.11,-47.04 -8.75,-13.88 -20.55,-24.71 -35.39,-32.47 -14.86,-7.77 -31.16,-11.66 -48.92,-11.66 h -56.62 v -115.73 h -45.79 v 298.08"
+                            style="
+                              fill: #ffffff;
+                              fill-opacity: 1;
+                              fill-rule: nonzero;
+                              stroke: none;
+                            "
+                            id="path1742"
+                          />
+                          <path
+                            d="m 3122.03,1629.57 c 16.52,9.58 29.56,22.9 39.13,39.97 9.58,17.07 14.37,36.43 14.37,58.07 0,21.66 -4.79,41.01 -14.37,58.08 -9.57,17.07 -22.61,30.39 -39.13,39.97 -16.51,9.57 -34.76,14.36 -54.74,14.36 -19.99,0 -38.24,-4.79 -54.75,-14.36 -16.51,-9.58 -29.55,-22.9 -39.13,-39.97 -9.57,-17.07 -14.37,-36.42 -14.37,-58.08 0,-21.64 4.8,-41 14.37,-58.07 9.58,-17.07 22.62,-30.39 39.13,-39.97 16.51,-9.57 34.76,-14.36 54.75,-14.36 19.98,0 38.23,4.79 54.74,14.36 z m -133.43,-36.84 c -23.59,13.88 -42.12,32.68 -55.57,56.41 -13.47,23.74 -20.2,49.89 -20.2,78.47 0,28.59 6.73,54.75 20.2,78.48 13.45,23.73 31.98,42.53 55.57,56.41 23.59,13.88 49.82,20.82 78.69,20.82 28.86,0 55.01,-6.94 78.47,-20.82 23.45,-13.88 41.91,-32.68 55.37,-56.41 13.46,-23.73 20.19,-49.89 20.19,-78.48 0,-28.58 -6.73,-54.73 -20.19,-78.47 -13.46,-23.73 -31.92,-42.53 -55.37,-56.41 -23.46,-13.88 -49.61,-20.81 -78.47,-20.81 -28.87,0 -55.1,6.93 -78.69,20.81"
+                            style="
+                              fill: #ffffff;
+                              fill-opacity: 1;
+                              fill-rule: nonzero;
+                              stroke: none;
+                            "
+                            id="path1744"
+                          />
+                          <path
+                            d="m 3280.43,1876.66 h 54.12 l 134.88,-218.99 h 2.5 l -2.5,57.46 v 161.53 h 45.38 v -298.08 h -47.46 l -141.54,230.22 h -2.5 l 2.5,-57.46 v -172.76 h -45.38 v 298.08"
+                            style="
+                              fill: #ffffff;
+                              fill-opacity: 1;
+                              fill-rule: nonzero;
+                              stroke: none;
+                            "
+                            id="path1746"
+                          />
+                          <path
+                            d="m 3590.17,1876.66 h 45.79 v -298.08 h -45.79 v 298.08"
+                            style="
+                              fill: #ffffff;
+                              fill-opacity: 1;
+                              fill-rule: nonzero;
+                              stroke: none;
+                            "
+                            id="path1748"
+                          />
+                          <path
+                            d="m 3827.47,1621.04 c 14.42,0 26.02,4.37 34.76,13.11 8.74,8.75 13.11,19.22 13.11,31.43 0,12.22 -4.51,22.76 -13.52,31.64 -9.03,8.89 -21.03,13.33 -36.02,13.33 h -69.11 v -89.51 z m -7.08,130.3 c 13.88,0 24.98,4.23 33.3,12.71 8.33,8.46 12.49,18.24 12.49,29.34 0,11.1 -4.1,20.75 -12.27,28.94 -8.2,8.18 -18.81,12.28 -31.86,12.28 h -65.36 v -83.27 z m -109.49,125.32 h 111.57 c 15.82,0 30.53,-3.48 44.13,-10.41 13.6,-6.94 24.36,-16.45 32.27,-28.52 7.91,-12.07 11.86,-25.47 11.86,-40.18 0,-14.71 -3.68,-27.54 -11.03,-38.5 -7.36,-10.97 -17.14,-19.36 -29.36,-25.19 v -2.08 c 15.55,-5.28 27.9,-14.02 37.06,-26.23 9.15,-12.21 13.73,-26.64 13.73,-43.3 0,-16.37 -4.23,-30.87 -12.69,-43.5 -8.47,-12.63 -19.85,-22.48 -34.14,-29.56 -14.3,-7.07 -29.91,-10.61 -46.83,-10.61 H 3710.9 v 298.08"
+                            style="
+                              fill: #ffffff;
+                              fill-opacity: 1;
+                              fill-rule: nonzero;
+                              stroke: none;
+                            "
+                            id="path1750"
+                          />
+                          <path
+                            d="m 3981.49,1876.66 h 45.8 v -254.78 h 128.22 v -43.3 h -174.02 v 298.08"
+                            style="
+                              fill: #ffffff;
+                              fill-opacity: 1;
+                              fill-rule: nonzero;
+                              stroke: none;
+                            "
+                            id="path1752"
+                          />
+                          <path
+                            d="m 4203.81,1876.66 h 180.68 v -43.3 H 4249.6 v -84.09 h 121.56 v -43.3 H 4249.6 v -84.09 h 134.89 v -43.3 h -180.68 v 298.08"
+                            style="
+                              fill: #ffffff;
+                              fill-opacity: 1;
+                              fill-rule: nonzero;
+                              stroke: none;
+                            "
+                            id="path1754"
+                          />
+                          <path
+                            d="m 4558.91,1593.56 c -19.71,14.43 -33.45,34.69 -41.21,60.78 l 43.29,17.49 c 4.44,-16.65 12.35,-30.26 23.73,-40.8 11.37,-10.55 25.11,-15.82 41.22,-15.82 14.98,0 27.68,3.88 38.08,11.66 10.41,7.77 15.62,18.45 15.62,32.05 0,12.49 -4.58,22.83 -13.74,31.02 -9.16,8.19 -24.98,16.17 -47.46,23.94 l -18.73,6.66 c -20.27,7.21 -37.12,17.28 -50.59,30.18 -13.46,12.91 -20.18,30.04 -20.18,51.42 0,14.7 3.95,28.31 11.86,40.79 7.91,12.49 19,22.34 33.3,29.56 14.3,7.22 30.46,10.83 48.51,10.83 25.81,0 46.48,-6.32 62.03,-18.94 15.54,-12.64 26.08,-26.86 31.64,-42.68 l -41.22,-17.49 c -2.77,10 -8.6,18.6 -17.48,25.82 -8.89,7.21 -20.4,10.82 -34.56,10.82 -13.6,0 -25.12,-3.61 -34.55,-10.82 -9.44,-7.22 -14.15,-16.38 -14.15,-27.48 0,-10.27 4.23,-18.8 12.69,-25.6 8.46,-6.81 21.57,-13.25 39.34,-19.36 l 19.15,-6.66 c 25.54,-8.89 45.23,-20.4 59.12,-34.55 13.88,-14.16 20.81,-33.04 20.81,-56.62 0,-19.43 -4.92,-35.74 -14.78,-48.92 -9.85,-13.19 -22.48,-22.96 -37.88,-29.35 -15.41,-6.38 -31.16,-9.57 -47.25,-9.57 -24.71,0 -46.91,7.21 -66.61,21.64"
+                            style="
+                              fill: #ffffff;
+                              fill-opacity: 1;
+                              fill-rule: nonzero;
+                              stroke: none;
+                            "
+                            id="path1756"
+                          />
+                          <path
+                            d="m 4832.22,1586.9 c -17.07,9.99 -30.26,24.15 -39.55,42.47 -9.31,18.31 -13.95,39.55 -13.95,63.69 v 183.6 h 45.37 v -186.1 c 0,-22.48 5.83,-40.65 17.49,-54.53 11.65,-13.89 28.17,-20.82 49.54,-20.82 21.65,0 38.3,6.93 49.95,20.82 11.66,13.88 17.49,32.05 17.49,54.53 v 186.1 h 45.39 v -183.6 c 0,-23.87 -4.58,-44.96 -13.74,-63.28 -9.16,-18.31 -22.21,-32.54 -39.14,-42.67 -16.93,-10.13 -36.92,-15.19 -59.95,-15.19 -22.2,0 -41.84,4.99 -58.9,14.98"
+                            style="
+                              fill: #ffffff;
+                              fill-opacity: 1;
+                              fill-rule: nonzero;
+                              stroke: none;
+                            "
+                            id="path1758"
+                          />
+                          <path
+                            d="m 5178.37,1737.61 c 14.43,0 26.57,4.57 36.43,13.73 9.85,9.16 14.78,20.68 14.78,34.56 0,12.76 -4.51,23.94 -13.53,33.51 -9.02,9.58 -21.02,14.37 -36.01,14.37 h -59.12 v -96.17 z m -103.24,139.05 h 104.49 c 18.04,0 34.35,-3.89 48.92,-11.66 14.57,-7.78 26.08,-18.6 34.56,-32.47 8.45,-13.89 12.69,-29.57 12.69,-47.05 0,-19.98 -6.45,-37.68 -19.35,-53.07 -12.91,-15.41 -29.09,-25.75 -48.51,-31.02 l -0.42,-2.08 82.02,-118.23 v -2.5 h -52.87 l -79.52,116.98 h -36.22 v -116.98 h -45.79 v 298.08"
+                            style="
+                              fill: #ffffff;
+                              fill-opacity: 1;
+                              fill-rule: nonzero;
+                              stroke: none;
+                            "
+                            id="path1760"
+                          />
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Réseaux sociaux (mobile uniquement) -->
+            <div class="lg:hidden mt-6 social-mobile-integration">
+              <p class="text-center text-white/80 text-sm mb-3">Suivez-nous</p>
+              <div class="flex justify-center space-x-3">
+                <!-- LinkedIn -->
+                <a
+                  href="https://www.linkedin.com/company/cohalinkk/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="group social-mobile-icon"
+                  aria-label="Suivez-nous sur LinkedIn"
+                >
+                  <div
+                    class="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center shadow-md hover:shadow-lg transform hover:scale-110 transition-all duration-300 group-hover:rotate-3 border border-white/30"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="white"
+                    >
+                      <path
+                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                      />
+                    </svg>
+                  </div>
+                </a>
+
+                <!-- Instagram -->
+                <a
+                  href="https://www.instagram.com/cohalinkk/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="group social-mobile-icon"
+                  aria-label="Suivez-nous sur Instagram"
+                >
+                  <div
+                    class="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center shadow-md hover:shadow-lg transform hover:scale-110 transition-all duration-300 group-hover:-rotate-3 border border-white/30"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0,0,256,256"
+                      style="fill: #ffffff"
+                    >
+                      <g transform="scale(5.12,5.12)">
+                        <path
+                          d="M16,3c-7.17,0 -13,5.83 -13,13v18c0,7.17 5.83,13 13,13h18c7.17,0 13,-5.83 13,-13v-18c0,-7.17 -5.83,-13 -13,-13zM37,11c1.1,0 2,0.9 2,2c0,1.1 -0.9,2 -2,2c-1.1,0 -2,-0.9 -2,-2c0,-1.1 0.9,-2 2,-2zM25,14c6.07,0 11,4.93 11,11c0,6.07 -4.93,11 -11,11c-6.07,0 -11,-4.93 -11,-11c0,-6.07 4.93,-11 11,-11zM25,16c-4.96,0 -9,4.04 -9,9c0,4.96 4.04,9 9,9c4.96,0 9,-4.04 9,-9c0,-4.96 -4.04,-9 -9,-9z"
+                        ></path>
+                      </g>
+                    </svg>
+                  </div>
+                </a>
+
+                <!-- Facebook -->
+                <a
+                  href="https://www.facebook.com/profile.php?id=61577775392202"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="group social-mobile-icon"
+                  aria-label="Suivez-nous sur Facebook"
+                >
+                  <div
+                    class="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center shadow-md hover:shadow-lg transform hover:scale-110 transition-all duration-300 group-hover:rotate-3 border border-white/30"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="white"
+                    >
+                      <path
+                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                      />
+                    </svg>
+                  </div>
+                </a>
+
+                <!-- TikTok -->
+                <a
+                  href="https://www.tiktok.com/@cohalinkk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="group social-mobile-icon"
+                  aria-label="Suivez-nous sur TikTok"
+                >
+                  <div
+                    class="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center shadow-md hover:shadow-lg transform hover:scale-110 transition-all duration-300 group-hover:-rotate-3 border border-white/30"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="white"
+                    >
+                      <path
+                        d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Images : Téléphone mobile -->
+          <div
+            class="lg:col-span-1 flex justify-center lg:absolute lg:right-0 lg:-bottom-12 order-1 lg:order-2 opacity-0"
+            id="hero-phone"
+          >
+            <!-- iPhone moderne avec Dynamic Island -->
+            <div class="relative">
+              <div
+                class="relative mx-auto border-gray-800 bg-gray-800 border-[8px] lg:border-[10px] rounded-[1.5rem] lg:rounded-[2rem] h-[280px] lg:h-[330px] w-[140px] lg:w-[170px] shadow-2xl transform -rotate-6 lg:-rotate-12 hover:rotate-0 transition-all duration-700 hover:scale-105"
+              >
+                <!-- Dynamic Island -->
+                <div
+                  class="w-[70px] lg:w-[85px] h-[12px] lg:h-[14px] bg-gray-800 top-0 rounded-b-[0.75rem] left-1/2 -translate-x-1/2 absolute"
+                ></div>
+                <!-- Boutons volume -->
+                <div
+                  class="h-[20px] lg:h-[25px] w-[2px] bg-gray-800 absolute -start-[10px] lg:-start-[12px] top-[60px] lg:top-[70px] rounded-s-lg"
+                ></div>
+                <div
+                  class="h-[20px] lg:h-[25px] w-[2px] bg-gray-800 absolute -start-[10px] lg:-start-[12px] top-[85px] lg:top-[100px] rounded-s-lg"
+                ></div>
+                <!-- Bouton power -->
+                <div
+                  class="h-[30px] lg:h-[35px] w-[2px] bg-gray-800 absolute -end-[10px] lg:-end-[12px] top-[70px] lg:top-[80px] rounded-e-lg"
+                ></div>
+                <!-- Écran -->
+                <div
+                  class="rounded-[1rem] lg:rounded-[1.5rem] overflow-hidden w-[124px] lg:w-[150px] h-[264px] lg:h-[310px] bg-white"
+                >
+                  <img
+                    src="./assets/accueil.jpeg"
+                    class="w-full h-full object-cover mt-3 lg:mt-4"
+                    alt="Application mobile CohaLinkk - Interface de colocation avec matching intelligent"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section partenaires -->
+    <section class="py-12 lg:py-16 bg-gray-50 reveal-section">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col items-center space-y-8">
+          <!-- Titre de la section -->
+          <div class="text-center">
+            <div class="flex items-center justify-center gap-4">
+              <span class="text-3xl lg:text-4xl font-semibold text-gray-800"
+                >NOS</span
+              >
+              <span class="curved-badge-large blue text-3xl lg:text-4xl">
+                PARTENAIRES
+              </span>
+            </div>
+          </div>
+
+          <!-- Logos des partenaires -->
+          <div class="flex justify-center items-center gap-6 lg:gap-16">
+            <!-- Logo French Tech -->
+            <div
+              class="partner-card relative transform hover:scale-110 transition-all duration-300"
+            >
+              <div
+                class="w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 rounded-3xl p-1 bg-gradient-to-r from-yellow-400 via-blue-800 via-blue-900 to-green-400 hover:shadow-2xl transition-all duration-300"
+              >
+                <div
+                  class="w-full h-full bg-white rounded-3xl flex items-center justify-center p-4 lg:p-6"
+                >
+                  <img
+                    src="./assets/partners/french-tech.png"
+                    alt="French Tech"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Logo We Are One Academy -->
+            <div
+              class="partner-card relative transform hover:scale-110 transition-all duration-300"
+            >
+              <div
+                class="w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 rounded-3xl p-1 bg-gradient-to-r from-green-400 via-blue-900 via-blue-800 to-yellow-400 hover:shadow-2xl transition-all duration-300"
+              >
+                <div
+                  class="w-full h-full bg-white rounded-3xl flex items-center justify-center p-4 lg:p-6"
+                >
+                  <img
+                    src="./assets/partners/we-are-one.avif"
+                    alt="We Are One Academy"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Logo BPI -->
+            <div
+              class="partner-card relative transform hover:scale-110 transition-all duration-300"
+            >
+              <div
+                class="w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 rounded-3xl p-1 bg-gradient-to-r from-green-400 via-blue-900 via-blue-800 to-yellow-400 hover:shadow-2xl transition-all duration-300"
+              >
+                <div
+                  class="w-full h-full bg-white rounded-3xl flex items-center justify-center p-4 lg:p-6"
+                >
+                  <img
+                    src="./assets/partners/bpi-france.webp"
+                    alt="BPI France"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section "ils parlent de nous" -->
+    <section class="py-12 lg:py-20 bg-white reveal-section">
+      <div class="container mx-auto px-4">
+        <!-- Titre principal avec mots colorés -->
+        <div class="text-center mb-8 lg:mb-12">
+          <div class="flex items-center justify-center gap-4">
+            <span class="text-3xl lg:text-4xl font-semibold text-gray-800"
+              >ILS PARLENT DE</span
+            >
+            <span class="curved-badge-large orange text-3xl lg:text-4xl">
+              NOUS
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel automatique des logos partenaires -->
+      <div class="relative overflow-hidden">
+        <div class="flex animate-scroll">
+          <img
+            src="./assets/partners/ouillade.png"
+            alt="Ouillade"
+            class="h-12 mx-8 flex-shrink-0"
+          />
+          <img
+            src="./assets/partners/lindependant.png"
+            alt="L'independant"
+            class="h-12 mx-8 flex-shrink-0"
+          />
+          <img
+            src="./assets/partners/le-figaro.svg"
+            alt="Le Figaro"
+            class="h-12 mx-8 flex-shrink-0"
+          />
+          <img
+            src="./assets/partners/le-parisien.png"
+            alt="Le Parisien"
+            class="h-12 mx-8 flex-shrink-0"
+          />
+          <img
+            src="./assets/partners/ouillade.png"
+            alt="Ouillade"
+            class="h-12 mx-8 flex-shrink-0"
+          />
+          <img
+            src="./assets/partners/lindependant.png"
+            alt="L'independant"
+            class="h-12 mx-8 flex-shrink-0"
+          />
+          <img
+            src="./assets/partners/le-figaro.svg"
+            alt="Le Figaro"
+            class="h-12 mx-8 flex-shrink-0"
+          />
+          <img
+            src="./assets/partners/le-parisien.png"
+            alt="Le Parisien"
+            class="h-12 mx-8 flex-shrink-0"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Section slogans -->
+    <section class="py-12 lg:py-20 bg-white reveal-section">
+      <div class="container mx-auto px-4">
+        <!-- Titre principal avec mots colorés -->
+        <div class="text-center mb-8 lg:mb-12">
+          <h2
+            class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 leading-tight stagger-text"
+          >
+            Une équipe qui connaît la
+            <span
+              class="curved-badge-large orange transform -rotate-3 hover:rotate-0 transition-transform duration-300"
+            >
+              colocation
+            </span>
+            <br class="sm:hidden" />
+            et qui<br />
+            veut la rendre
+            <span
+              class="curved-badge-large green transform rotate-3 hover:rotate-0 transition-transform duration-300"
+            >
+              meilleure
+            </span>
+          </h2>
+        </div>
+
+        <!-- Paragraphe d'explication -->
+        <div class="text-center max-w-4xl mx-auto">
+          <p
+            class="text-lg lg:text-xl text-gray-600 leading-relaxed fade-in-text"
+          >
+            CohaLinkk, c'est l'histoire de deux sœurs et d'un développeur qui
+            ont vécu les limites de la colocation actuelle. Ensemble, ils ont
+            imaginé une solution simple, humaine et sécurisée.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section équipe -->
+    <section class="py-12 lg:py-20 bg-white reveal-section">
+      <div class="container mx-auto px-4">
+        <!-- Grille des membres de l'équipe -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto team-cards"
+        >
+          <!-- Cyrielle Foxonet -->
+          <div
+            class="team-card bg-blue-50 rounded-3xl overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 transform hover:scale-105"
+          >
+            <!-- Photo avec fond coloré -->
+            <div
+              class="bg-gradient-to-b from-yellow-200 to-orange-200 h-80 flex items-end justify-center"
+            >
+              <img
+                src="./assets/team/cyrielle.png"
+                alt="Cyrielle Foxonet"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <!-- Contenu de la carte -->
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-xl font-bold text-gray-800">
+                  Cyrielle Foxonet
+                </h3>
+                <a
+                  href="https://www.linkedin.com/in/cyrielle-foxonet-61272a198/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-blue-600 hover:text-blue-800"
+                  aria-label="Profil LinkedIn de Cyrielle Foxonet"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <p class="text-blue-600 font-semibold mb-3">Co-fondatrice</p>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Diplômée d'une IAE, Ecole de Management Publique à Toulouse.
+                C'est lors de son alternance à Paris, en vivant une expérience
+                de colocation de courte durée, qu'elle a identifié des besoins
+                réels chez les locataires et les propriétaires. Cette situation
+                l'a inspirée à imaginer une plateforme dédiée à la colocation.
+                Elle souhaite aujourd'hui concrétiser ce projet innovant.
+              </p>
+            </div>
+          </div>
+
+          <!-- Romane Foxonet -->
+          <div
+            class="team-card bg-blue-50 rounded-3xl overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 transform hover:scale-105"
+          >
+            <!-- Photo avec fond coloré -->
+            <div
+              class="bg-gradient-to-b from-blue-100 to-blue-200 h-80 flex items-end justify-center"
+            >
+              <img
+                src="./assets/team/romane.png"
+                alt="Romane Foxonet"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <!-- Contenu de la carte -->
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-xl font-bold text-gray-800">Romane Foxonet</h3>
+                <a
+                  href="https://www.linkedin.com/in/romane-foxonet-174a20370/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-blue-600 hover:text-blue-800"
+                  aria-label="Profil LinkedIn de Romane Foxonet"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <p class="text-blue-600 font-semibold mb-3">Co-fondatrice</p>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Étudiante en orthophonie et colocataire depuis deux années,
+                Romane a vécu les réalités du quotidien partagé. Elle œuvre à
+                rendre la colocation plus accessible, fluide et moderne.
+              </p>
+            </div>
+          </div>
+
+          <!-- Ilan Chekroun -->
+          <div
+            class="team-card bg-blue-50 rounded-3xl overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 transform hover:scale-105"
+          >
+            <!-- Photo avec fond coloré -->
+            <div
+              class="bg-gradient-to-b from-green-100 to-green-200 h-80 flex items-end justify-center"
+            >
+              <img
+                src="./assets/team/ilaan.png"
+                alt="Ilan Chekroun"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <!-- Contenu de la carte -->
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-xl font-bold text-gray-800">Ilan Chekroun</h3>
+                <a
+                  href="https://www.linkedin.com/in/ilaan16/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-blue-600 hover:text-blue-800"
+                  aria-label="Profil LinkedIn d'Ilan Chekroun"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <p class="text-blue-600 font-semibold mb-3">
+                Co-fondateur & développeur
+              </p>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Développeur passionné, Ilan accompagne Cyrielle et Romane dans
+                la création technique de la plateforme. Il assure la mise en
+                œuvre d'une solution fiable, intuitive et performante.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- pub section -->
+    <section
+      class="py-12 lg:py-20 mx-4 lg:mx-20 rounded-3xl bg-orange-300 relative overflow-hidden reveal-section"
+    >
+      <!-- Formes décoratives en arrière-plan, masquées sur mobile -->
+      <img
+        src="./assets/facil.svg"
+        alt="pub"
+        class="hidden lg:block absolute bottom-0 right-0"
+      />
+
+      <div class="container mx-auto px-4 relative z-10">
+        <div
+          class="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-6xl mx-auto"
+        >
+          <!-- Contenu texte et boutons -->
+          <div class="text-center lg:text-left order-2 lg:order-1">
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-6 leading-tight"
+            >
+              Et si on vous
+              <span class="text-white italic">facilitait</span>
+              <br />
+              vraiment la colocation ?
+            </h2>
+
+            <p class="text-lg lg:text-xl text-gray-700 mb-8 leading-relaxed">
+              Choisissez votre profil et découvrez comment CohaLinkk peut
+              transformer votre expérience de logement.
+            </p>
+
+            <!-- Boutons -->
+            <div
+              class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+            >
+              <a
+                href="./colocataire.html"
+                class="bg-white text-blue-700 space-x-2 px-4 lg:px-6 py-3 rounded-full font-semibold text-base lg:text-lg hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center"
+              >
+                <p>Colocataire</p>
+                <span
+                  class="bg-blue-800 text-white px-1 py-1 rounded-2xl transform -rotate-1"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </span>
+              </a>
+
+              <a
+                href="./proprietaire.html"
+                class="bg-white space-x-2 border-2 border-white text-blue-700 px-4 lg:px-6 py-3 rounded-full font-semibold text-base lg:text-lg hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center"
+              >
+                <p class="hidden sm:block">Propriétaire</p>
+                <p class="sm:hidden">Propriétaire</p>
+                <span
+                  class="bg-blue-800 text-white px-1 py-1 rounded-2xl transform -rotate-1"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <!-- iPhone avec aperçu de l'app -->
+          <div class="flex justify-center order-1 lg:order-2">
+            <div class="relative">
+              <div
+                class="relative mx-auto border-gray-800 bg-gray-800 border-[10px] lg:border-[14px] rounded-[2rem] lg:rounded-[2.5rem] h-[330px] lg:h-[480px] w-[170px] lg:w-[240px] shadow-2xl transform hover:scale-105 hover:rotate-2 transition-all duration-700"
+              >
+                <!-- Dynamic Island -->
+                <div
+                  class="w-[85px] lg:w-[120px] h-[14px] lg:h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"
+                ></div>
+                <!-- Boutons volume -->
+                <div
+                  class="h-[25px] lg:h-[35px] w-[2px] lg:w-[3px] bg-gray-800 absolute -start-[12px] lg:-start-[17px] top-[70px] lg:top-[100px] rounded-s-lg"
+                ></div>
+                <div
+                  class="h-[25px] lg:h-[35px] w-[2px] lg:w-[3px] bg-gray-800 absolute -start-[12px] lg:-start-[17px] top-[100px] lg:top-[140px] rounded-s-lg"
+                ></div>
+                <!-- Bouton power -->
+                <div
+                  class="h-[35px] lg:h-[50px] w-[2px] lg:w-[3px] bg-gray-800 absolute -end-[12px] lg:-end-[17px] top-[80px] lg:top-[115px] rounded-e-lg"
+                ></div>
+                <!-- Écran -->
+                <div
+                  class="rounded-[1.5rem] lg:rounded-[2rem] overflow-hidden w-[150px] lg:w-[212px] h-[310px] lg:h-[452px] bg-white"
+                >
+                  <img
+                    src="./assets/eco-screen.jpeg"
+                    class="w-full h-full object-cover"
+                    alt="Interface de sélection de chambre dans l'application CohaLinkk"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section
+      class="py-12 lg:py-20 bg-emerald-500 rounded-3xl mx-4 lg:mx-10 my-6 lg:my-10 relative overflow-hidden reveal-section"
+    >
+      <!-- Vecteurs decoratifs en arrière-plan, masqués sur mobile -->
+      <img
+        src="./assets/contact-vector.svg"
+        alt="contact"
+        class="hidden lg:block absolute top-0 w-full h-full"
+      />
+
+      <!-- Texte cohalinkk en haut à droite, masqué sur mobile -->
+      <img
+        src="./assets/logo-vector.svg"
+        alt="cohalinkk"
+        class="hidden lg:block absolute top-8 right-8"
+      />
+
+      <div class="container mx-auto px-4 relative z-10">
+        <!-- Carte blanche unique contenant tout le contenu -->
+        <div
+          class="bg-white rounded-3xl p-6 lg:p-12 shadow-lg max-w-6xl mx-auto hover:shadow-2xl transition-shadow duration-500 contact-form"
+        >
+          <div
+            class="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 items-start"
+          >
+            <!-- Texte d'introduction -->
+            <div class="text-center lg:text-left">
+              <h2
+                class="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 mb-6 leading-tight"
+              >
+                Une question, une idée,<br />
+                une envie de collaborer ?<br />
+                <span class="text-gray-700">On vous écoute.</span>
+              </h2>
+
+              <div
+                class="text-base lg:text-lg text-gray-700 leading-relaxed space-y-2"
+              >
+                <p>
+                  Futur
+                  <span class="text-blue-600 font-semibold">colocataire</span>,
+                  <span class="text-blue-600 font-semibold">propriétaire</span>,
+                  <span class="text-blue-600 font-semibold">partenaire</span> ou
+                </p>
+                <p>juste curieux ?</p>
+                <br />
+                <p>Laisse-nous un petit message (ou un grand</p>
+                <p>pavé, on lit tout).</p>
+                <br />
+                <p>
+                  Et si c'était
+                  <span class="text-green-600 font-semibold"
+                    >le début d'une belle collaboration...</span
+                  >
+                </p>
+                <p>
+                  <span class="text-green-600 font-semibold"
+                    >ou colocation</span
+                  >
+                  ? Peu importe le mot : on est
+                </p>
+                <p>partants.</p>
+              </div>
+
+              <!-- Réseaux sociaux -->
+              <div class="mt-8">
+                <p class="text-center text-sm text-gray-600 mb-4">
+                  Suivez-nous sur les réseaux
+                </p>
+                <div class="flex justify-center lg:justify-center space-x-6">
+                  <!-- Linkedin -->
+                  <a
+                    href="https://www.linkedin.com/company/cohalinkk/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="group"
+                    aria-label="Suivez-nous sur LinkedIn"
+                  >
+                    <div
+                      class="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="white"
+                      >
+                        <path
+                          d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                        />
+                      </svg>
+                    </div>
+                  </a>
+
+                  <!-- Instagram -->
+                  <a
+                    href="https://www.instagram.com/cohalinkk/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="group"
+                    aria-label="Suivez-nous sur Instagram"
+                  >
+                    <div
+                      class="w-12 h-12 bg-gradient-to-r from-pink-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        x="0px"
+                        y="0px"
+                        width="24"
+                        height="24"
+                        viewBox="0,0,256,256"
+                        style="fill: #ffffff"
+                      >
+                        <g
+                          fill="#ffffff"
+                          fill-rule="nonzero"
+                          stroke="none"
+                          stroke-width="1"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-dasharray=""
+                          stroke-dashoffset="0"
+                          font-family="none"
+                          font-weight="none"
+                          font-size="none"
+                          text-anchor="none"
+                          style="mix-blend-mode: normal"
+                        >
+                          <g transform="scale(5.12,5.12)">
+                            <path
+                              d="M16,3c-7.17,0 -13,5.83 -13,13v18c0,7.17 5.83,13 13,13h18c7.17,0 13,-5.83 13,-13v-18c0,-7.17 -5.83,-13 -13,-13zM37,11c1.1,0 2,0.9 2,2c0,1.1 -0.9,2 -2,2c-1.1,0 -2,-0.9 -2,-2c0,-1.1 0.9,-2 2,-2zM25,14c6.07,0 11,4.93 11,11c0,6.07 -4.93,11 -11,11c-6.07,0 -11,-4.93 -11,-11c0,-6.07 4.93,-11 11,-11zM25,16c-4.96,0 -9,4.04 -9,9c0,4.96 4.04,9 9,9c4.96,0 9,-4.04 9,-9c0,-4.96 -4.04,-9 -9,-9z"
+                            ></path>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+
+                  <!-- Facebook -->
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61577775392202"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="group"
+                    aria-label="Suivez-nous sur Facebook"
+                  >
+                    <div
+                      class="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="white"
+                      >
+                        <path
+                          d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                        />
+                      </svg>
+                    </div>
+                  </a>
+
+                  <!-- TikTok -->
+                  <a
+                    href="https://www.tiktok.com/@cohalinkk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="group"
+                    aria-label="Suivez-nous sur TikTok"
+                  >
+                    <div
+                      class="w-12 h-12 bg-gradient-to-r from-gray-800 to-gray-900 rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="white"
+                      >
+                        <path
+                          d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
+                        />
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Formulaire de contact -->
+            <!-- action="https://formspree.io/f/mjkrqpgd" -->
+            <div>
+              <form
+                action="https://cohalinkk.app.n8n.cloud/webhook/8e97f7ec-ed9e-4300-8c91-67155c823a6a"
+                method="POST"
+                class="space-y-6 form-animation"
+              >
+                <!-- Dropdown -->
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2"
+                    >Je suis un futur <span class="text-red-500">*</span></label
+                  >
+                  <select
+                    name="profil"
+                    required
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white"
+                  >
+                    <option value="">Choisir</option>
+                    <option value="Colocataire">Colocataire</option>
+                    <option value="Propriétaire">Propriétaire</option>
+                    <option value="Partenaire">Partenaire</option>
+                    <option value="JoinUs">Nous rejoindre</option>
+                    <option value="Autre">Autre</option>
+                  </select>
+                </div>
+
+                <!-- Prénom et Nom -->
+                <div class="grid grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2"
+                      >Prénom <span class="text-red-500">*</span></label
+                    >
+                    <input
+                      type="text"
+                      name="prenom"
+                      placeholder="Prénom"
+                      required
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    />
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2"
+                      >Nom <span class="text-red-500">*</span></label
+                    >
+                    <input
+                      type="text"
+                      name="nom"
+                      placeholder="Nom"
+                      required
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    />
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2"
+                    >Email <span class="text-red-500">*</span></label
+                  >
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="your@mail.com"
+                    required
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  />
+                </div>
+
+                <!-- Téléphone -->
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2"
+                    >Téléphone</label
+                  >
+                  <input
+                    type="tel"
+                    name="telephone"
+                    placeholder="06 12 34 56 78"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  />
+                </div>
+
+                <!-- Comment avez-vous connu CohaLinkk -->
+                <div>
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2"
+                      >Comment avez-vous connu CohaLinkk ?
+                      <span class="text-red-500">*</span></label
+                    >
+                  </div>
+                  <select
+                    name="how_know_cohalinkk"
+                    id="how_know_cohalinkk"
+                    required
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  >
+                    <option value="" selected disabled>
+                      — Sélectionnez une option —
+                    </option>
+                    <option value="google">Google</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="tiktok">TikTok</option>
+                    <option value="linkedin">Linkedin</option>
+                    <option value="presse">Presse</option>
+                    <option value="other">Autre</option>
+                  </select>
+                  <div id="how_know_other_wrapper" class="mt-3 hidden">
+                    <label
+                      class="block text-sm font-medium text-gray-700 mb-2"
+                      for="how_know_other"
+                      >Veuillez préciser</label
+                    >
+                    <input
+                      type="text"
+                      id="how_know_other"
+                      name="how_know_other"
+                      placeholder="Ex: Recommandation d'un ami, événement, forum..."
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    />
+                  </div>
+                </div>
+
+                <!-- Message -->
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2"
+                    >Message <span class="text-red-500">*</span></label
+                  >
+                  <div class="relative">
+                    <textarea
+                      name="message"
+                      rows="5"
+                      placeholder="Laissez-nous un message..."
+                      required
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 resize-none"
+                      id="message-textarea"
+                    ></textarea>
+                    <div
+                      class="absolute bottom-2 right-2 text-xs text-gray-400"
+                    >
+                      <span id="message-counter">0</span>/5 mots minimum
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Checkbox -->
+                <div class="flex items-start space-x-3">
+                  <input
+                    type="checkbox"
+                    name="privacy_accepted"
+                    id="privacy"
+                    required
+                    class="mt-1 w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+                  />
+                  <label for="privacy" class="text-sm text-gray-600">
+                    J'accepte la
+                    <a
+                      href="./politique-confidentialite.html"
+                      class="text-blue-600 underline"
+                      target="_blank"
+                      >politique de confidentialité</a
+                    >.
+                  </label>
+                </div>
+
+                <!-- Bouton de soumission -->
+                <button
+                  type="submit"
+                  class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+                  aria-describedby="confirmation-message error-message"
+                >
+                  Soumettre
+                </button>
+
+                <!-- Message de confirmation (masqué par défaut) -->
+                <div
+                  id="confirmation-message"
+                  class="hidden mt-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg"
+                  role="status"
+                  aria-live="polite"
+                >
+                  <p class="font-semibold">✅ Message envoyé avec succès !</p>
+                  <p class="text-sm">
+                    Nous vous répondrons dans les plus brefs délais.
+                  </p>
+                </div>
+
+                <!-- Message d'erreur (masqué par défaut) -->
+                <div
+                  id="error-message"
+                  class="hidden mt-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg"
+                  role="alert"
+                  aria-live="assertive"
+                >
+                  <p class="font-semibold">❌ Erreur lors de l'envoi</p>
+                  <p class="text-sm">
+                    Veuillez réessayer ou nous contacter directement.
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section footer -->
+    <section class="py-12 lg:py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center">
+          <p class="text-sm lg:text-base text-gray-600">
+            © 2025 CohaLinkk. Tous droits réservés.
+          </p>
+          <div class="mt-4 space-x-4">
+            <a
+              href="./politique-confidentialite.html"
+              class="text-coha-blue hover:text-coha-blue/80 text-sm"
+              >Politique de confidentialité</a
+            >
+            <a
+              href="./confidentialite.html"
+              class="text-coha-blue hover:text-coha-blue/80 text-sm"
+              >Confidentialité et données</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Anime.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+    <style>
+      /* Animations personnalisées */
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px) translateX(0px);
+        }
+        33% {
+          transform: translateY(-20px) translateX(10px);
+        }
+        66% {
+          transform: translateY(-10px) translateX(-5px);
+        }
+      }
+
+      @keyframes floatBlob {
+        0%,
+        100% {
+          transform: translateY(0px) scale(1);
+        }
+        50% {
+          transform: translateY(-30px) scale(1.1);
+        }
+      }
+
+      @keyframes floatBlob2 {
+        0%,
+        100% {
+          transform: translateY(0px) scale(1);
+        }
+        50% {
+          transform: translateY(20px) scale(0.9);
+        }
+      }
+
+      .animate-float {
+        animation: float 6s ease-in-out infinite;
+      }
+
+      .floating-blob {
+        animation: floatBlob 8s ease-in-out infinite;
+      }
+
+      .floating-blob-2 {
+        animation: floatBlob2 7s ease-in-out infinite;
+      }
+
+      /* Styles iPhone modernes supprimés - remplacés par Flowbite */
+
+      /* Révélation progressive */
+      .reveal-section {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: all 0.8s ease-out;
+      }
+
+      .reveal-section.revealed {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Animation des cartes équipe */
+      .team-card {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+        transition: all 0.6s ease-out;
+      }
+
+      .team-card.animate {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+
+      /* Formulaire animé */
+      .form-animation input,
+      .form-animation textarea,
+      .form-animation select {
+        transition: all 0.3s ease;
+      }
+
+      .form-animation input:focus,
+      .form-animation textarea:focus,
+      .form-animation select:focus {
+        transform: scale(1.02);
+        box-shadow: 0 8px 25px rgba(59, 94, 247, 0.15);
+      }
+
+      /* Intégration réseaux sociaux dans la section hero */
+      .social-hero-integration {
+        opacity: 0;
+        transform: translateY(-10px);
+        animation: slideInHero 1s ease-out 0.8s forwards;
+      }
+
+      .social-hero-icon {
+        opacity: 0;
+        transform: scale(0.8);
+        animation: fadeInScaleHero 0.5s ease-out forwards;
+      }
+
+      .social-hero-icon:nth-child(1) {
+        animation-delay: 1.2s;
+      }
+      .social-hero-icon:nth-child(2) {
+        animation-delay: 1.4s;
+      }
+      .social-hero-icon:nth-child(3) {
+        animation-delay: 1.6s;
+      }
+      .social-hero-icon:nth-child(4) {
+        animation-delay: 1.8s;
+      }
+
+      @keyframes slideInHero {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeInScaleHero {
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      /* Effet de brillance au hover */
+      .social-hero-icon:hover div {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+      }
+
+      /* Animation subtile de la barre entière */
+      .social-hero-integration:hover {
+        transform: translateY(-2px);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      /* Réseaux sociaux mobile */
+      .social-mobile-integration {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: slideUpMobile 1s ease-out 2s forwards;
+      }
+
+      .social-mobile-icon {
+        opacity: 0;
+        transform: scale(0.8);
+        animation: fadeInScaleMobile 0.5s ease-out forwards;
+      }
+
+      .social-mobile-icon:nth-child(1) {
+        animation-delay: 2.2s;
+      }
+      .social-mobile-icon:nth-child(2) {
+        animation-delay: 2.4s;
+      }
+      .social-mobile-icon:nth-child(3) {
+        animation-delay: 2.6s;
+      }
+      .social-mobile-icon:nth-child(4) {
+        animation-delay: 2.8s;
+      }
+
+      @keyframes slideUpMobile {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeInScaleMobile {
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      /* Défilement infini avec JavaScript */
+      .animate-scroll {
+        animation: none;
+        width: max-content;
+      }
+    </style>
+
+    <script>
+      // Gestion du formulaire de contact
+      document.addEventListener("DOMContentLoaded", function () {
+        // Fonction pour compter les mots valides (au moins 2 caractères)
+        function countValidWords(text) {
+          // Regex pour extraire les mots (lettres, chiffres, caractères accentués)
+          // Un mot valide doit avoir au moins 2 caractères
+          const words = text
+            .trim()
+            .split(/\s+/)
+            .filter((word) => {
+              // Retirer la ponctuation et garder uniquement les caractères alphanumériques
+              const cleanWord = word.replace(/[^\w\u00C0-\u017F]/g, "");
+              return cleanWord.length >= 2;
+            });
+          return words.length;
+        }
+
+        // Compteur de mots pour le message
+        const messageTextarea = document.getElementById("message-textarea");
+        const messageCounter = document.getElementById("message-counter");
+        const howKnowSelect = document.getElementById("how_know_cohalinkk");
+        const howKnowOtherWrapper = document.getElementById(
+          "how_know_other_wrapper"
+        );
+        const howKnowOtherInput = document.getElementById("how_know_other");
+
+        if (messageTextarea && messageCounter) {
+          messageTextarea.addEventListener("input", function () {
+            const wordCount = countValidWords(this.value);
+            messageCounter.textContent = wordCount;
+
+            if (wordCount >= 5) {
+              messageCounter.classList.remove("text-red-400");
+              messageCounter.classList.add("text-green-500");
+            } else {
+              messageCounter.classList.remove("text-green-500");
+              messageCounter.classList.add("text-red-400");
+            }
+          });
+        }
+        // Animation d'entrée du hero
+        const heroTimeline = anime.timeline({
+          easing: "easeOutExpo",
+          duration: 1000,
+        });
+
+        // Logo d'abord
+        heroTimeline
+          .add({
+            targets: "#hero-logo",
+            opacity: [0, 1],
+            translateY: [-30, 0],
+            duration: 800,
+          })
+          // Puis contenu
+          .add(
+            {
+              targets: "#hero-content",
+              opacity: [0, 1],
+              translateY: [50, 0],
+              duration: 1000,
+            },
+            "-=400"
+          )
+          // Puis téléphone
+          .add(
+            {
+              targets: "#hero-phone",
+              opacity: [0, 1],
+              translateX: [100, 0],
+              scale: [0.8, 1],
+              duration: 1200,
+            },
+            "-=600"
+          )
+          // Images décoratives
+          .add(
+            {
+              targets: "#hero-image, #koala-image",
+              opacity: [0, 1],
+              scale: [0.8, 1],
+              duration: 800,
+            },
+            "-=800"
+          );
+
+        // Animation des badges au hover
+        const badges = document.querySelectorAll(
+          ".curved-badge-large, .curved-badge-medium"
+        );
+        badges.forEach((badge) => {
+          badge.addEventListener("mouseenter", () => {
+            anime({
+              targets: badge,
+              scale: [1, 1.1],
+              duration: 300,
+              easing: "easeOutCubic",
+            });
+          });
+
+          badge.addEventListener("mouseleave", () => {
+            anime({
+              targets: badge,
+              scale: [1.1, 1],
+              duration: 300,
+              easing: "easeOutCubic",
+            });
+          });
+        });
+
+        // Intersection Observer pour les révélations au scroll
+        const observerOptions = {
+          threshold: 0.1,
+          rootMargin: "0px 0px -50px 0px",
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("revealed");
+
+              // Animation spéciale pour les cartes équipe
+              if (entry.target.querySelector(".team-cards")) {
+                const teamCards = entry.target.querySelectorAll(".team-card");
+                anime({
+                  targets: teamCards,
+                  opacity: [0, 1],
+                  translateY: [30, 0],
+                  scale: [0.9, 1],
+                  delay: anime.stagger(200),
+                  duration: 600,
+                  easing: "easeOutExpo",
+                });
+              }
+            }
+          });
+        }, observerOptions);
+
+        // Observer toutes les sections à révéler
+        document.querySelectorAll(".reveal-section").forEach((section) => {
+          observer.observe(section);
+        });
+
+        // Animation des logos partenaires
+        const partnerCards = document.querySelectorAll(".partner-card");
+        partnerCards.forEach((card) => {
+          card.addEventListener("mouseenter", () => {
+            anime({
+              targets: card,
+              rotate: [0, 5],
+              scale: [1, 1.1],
+              duration: 300,
+              easing: "easeOutCubic",
+            });
+          });
+
+          card.addEventListener("mouseleave", () => {
+            anime({
+              targets: card,
+              rotate: [5, 0],
+              scale: [1.1, 1],
+              duration: 300,
+              easing: "easeOutCubic",
+            });
+          });
+        });
+
+        // Animation des inputs du formulaire
+        const formInputs = document.querySelectorAll(
+          ".form-animation input, .form-animation textarea, .form-animation select"
+        );
+        formInputs.forEach((input) => {
+          input.addEventListener("focus", () => {
+            anime({
+              targets: input,
+              scale: [1, 1.02],
+              duration: 200,
+              easing: "easeOutQuad",
+            });
+          });
+
+          input.addEventListener("blur", () => {
+            anime({
+              targets: input,
+              scale: [1.02, 1],
+              duration: 200,
+              easing: "easeOutQuad",
+            });
+          });
+        });
+
+        const form = document.querySelector("form");
+        const confirmationMessage = document.getElementById(
+          "confirmation-message"
+        );
+        const errorMessage = document.getElementById("error-message");
+        const submitButton = form.querySelector('button[type="submit"]');
+        const originalButtonText = submitButton.textContent;
+        const originalErrorMessageContent = errorMessage.innerHTML;
+
+        // Gestion de l'option "Autre" pour le champ "Comment avez-vous connu"
+        if (howKnowSelect && howKnowOtherWrapper && howKnowOtherInput) {
+          const toggleOther = () => {
+            const isOther = howKnowSelect.value === "other";
+            howKnowOtherWrapper.classList.toggle("hidden", !isOther);
+            howKnowOtherInput.toggleAttribute("required", isOther);
+            if (!isOther) {
+              howKnowOtherInput.value = "";
+            }
+          };
+          toggleOther();
+          howKnowSelect.addEventListener("change", toggleOther);
+        }
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault(); // Empêcher la soumission normale du formulaire
+
+          // Validation du nombre de mots dans le message
+          const messageValue = messageTextarea.value.trim();
+          const wordCount = countValidWords(messageValue);
+
+          if (wordCount < 5) {
+            // Afficher un message d'erreur spécifique pour le nombre de mots
+            errorMessage.innerHTML = `
+              <p class="font-semibold">❌ Message trop court</p>
+              <p class="text-sm">
+                Veuillez écrire au moins 5 mots valides (${wordCount}/5 mots).
+              </p>
+            `;
+            errorMessage.classList.remove("hidden");
+
+            // Mettre en évidence le textarea
+            messageTextarea.classList.add("border-red-500");
+            messageTextarea.focus();
+
+            // Retirer la classe après 3 secondes
+            setTimeout(() => {
+              messageTextarea.classList.remove("border-red-500");
+            }, 3000);
+
+            return;
+          }
+
+          // Animation du bouton
+          anime({
+            targets: submitButton,
+            scale: [1, 0.95, 1],
+            duration: 200,
+            easing: "easeInOutQuad",
+          });
+
+          // Afficher l'état de chargement
+          submitButton.textContent = "Envoi en cours...";
+          submitButton.disabled = true;
+
+          // Masquer les messages précédents
+          confirmationMessage.classList.add("hidden");
+          errorMessage.classList.add("hidden");
+          // Restaurer le message d'erreur par défaut
+          errorMessage.innerHTML = originalErrorMessageContent;
+
+          // Récupérer les données du formulaire
+          const formData = new FormData(form);
+          // Consolider la valeur pour n8n: si "Autre" est choisi, envoyer la précision
+          if (howKnowSelect) {
+            const base = howKnowSelect.value || "";
+            if (
+              base === "other" &&
+              howKnowOtherInput &&
+              howKnowOtherInput.value.trim() !== ""
+            ) {
+              formData.set(
+                "how_know_cohalinkk",
+                `Autre: ${howKnowOtherInput.value.trim()}`
+              );
+            } else if (base === "") {
+              // Sécurité côté JS si required n'est pas respecté par le navigateur
+              errorMessage.classList.remove("hidden");
+              submitButton.textContent = originalButtonText;
+              submitButton.disabled = false;
+              return;
+            }
+          }
+
+          // Envoyer les données vers n8n
+          fetch(
+            "https://n8n.ilaan.fr/webhook/8e97f7ec-ed9e-4300-8c91-67155c823a6a",
+            {
+              method: "POST",
+              body: formData,
+            }
+          )
+            .then((response) => {
+              if (response.ok) {
+                // Succès
+                confirmationMessage.classList.remove("hidden");
+                form.reset();
+              } else {
+                // Erreur
+                errorMessage.classList.remove("hidden");
+              }
+            })
+            .catch((error) => {
+              // Erreur réseau
+              errorMessage.classList.remove("hidden");
+              console.error("Erreur:", error);
+            })
+            .finally(() => {
+              // Réinitialiser le bouton
+              submitButton.textContent = originalButtonText;
+              submitButton.disabled = false;
+            });
+        });
+
+        // Gestion des paramètres URL
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get("success") === "true") {
+          confirmationMessage.classList.remove("hidden");
+          form.reset();
+        }
+
+        // Animation du carousel des logos partenaires
+        const carouselContainer = document.querySelector(".carousel-container");
+        if (carouselContainer) {
+          // Démarrer l'animation avec un délai
+          setTimeout(() => {
+            carouselContainer.style.animationPlayState = "running";
+          }, 1000);
+
+          // Gestion de la pause sur hover
+          carouselContainer.addEventListener("mouseenter", () => {
+            carouselContainer.style.animationPlayState = "paused";
+          });
+
+          carouselContainer.addEventListener("mouseleave", () => {
+            carouselContainer.style.animationPlayState = "running";
+          });
+
+          // Animation d'entrée du carousel
+          anime({
+            targets: carouselContainer,
+            opacity: [0, 1],
+            translateY: [30, 0],
+            duration: 800,
+            delay: 500,
+            easing: "easeOutExpo",
+          });
+        }
+        // Défilement infini avec JavaScript
+        const infiniteScroll = document.querySelector(".animate-scroll");
+        if (infiniteScroll) {
+          let position = 0;
+          const speed = 0.5; // pixels par frame
+          let isPaused = false;
+
+          function scrollInfinite() {
+            if (!isPaused) {
+              position -= speed;
+              infiniteScroll.style.transform = `translateX(${position}px)`;
+
+              // Reset quand on arrive à la moitié (car on a doublé les logos)
+              if (Math.abs(position) >= infiniteScroll.scrollWidth / 2) {
+                position = 0;
+              }
+            }
+
+            requestAnimationFrame(scrollInfinite);
+          }
+
+          // Gestion de la pause sur hover
+          infiniteScroll.addEventListener("mouseenter", () => {
+            isPaused = true;
+          });
+
+          infiniteScroll.addEventListener("mouseleave", () => {
+            isPaused = false;
+          });
+
+          // Démarrer le défilement infini
+          setTimeout(() => {
+            scrollInfinite();
+          }, 1000);
+        }
+      });
+    </script>
+
+    <!-- Bouton Calendly flottant -->
+    <style>
+      .calendly-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        background: linear-gradient(135deg, #3b5ef7 0%, #2b4ed6 100%);
+        border: none;
+        border-radius: 50px;
+        box-shadow: 0 4px 20px rgba(59, 94, 247, 0.4);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 20px;
+        font-family: inherit;
+        font-weight: 600;
+        color: white;
+        text-decoration: none;
+        animation: pulse 2s infinite;
+      }
+
+      .calendly-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 25px rgba(59, 94, 247, 0.5);
+      }
+
+      .calendly-button:active {
+        transform: translateY(0);
+      }
+
+      .calendly-button-icon {
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+      }
+
+      .calendly-button-text {
+        white-space: nowrap;
+      }
+
+      /* Mobile : bouton léger (icône seule) */
+      @media (max-width: 640px) {
+        .calendly-button {
+          width: 56px;
+          height: 56px;
+          padding: 0;
+          border-radius: 50%;
+          justify-content: center;
+          bottom: 16px;
+          right: 16px;
+        }
+
+        .calendly-button-text {
+          display: none;
+        }
+
+        .calendly-button-icon {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      /* Tablette : bouton moyen avec texte court */
+      @media (min-width: 641px) and (max-width: 1024px) {
+        .calendly-button {
+          padding: 14px 18px;
+          font-size: 14px;
+          bottom: 20px;
+          right: 20px;
+        }
+
+        .calendly-button-text {
+          font-size: 14px;
+        }
+      }
+
+      /* Desktop : bouton complet avec texte */
+      @media (min-width: 1025px) {
+        .calendly-button {
+          padding: 16px 24px;
+          font-size: 16px;
+          bottom: 24px;
+          right: 24px;
+        }
+
+        .calendly-button-text {
+          font-size: 16px;
+        }
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          box-shadow: 0 4px 20px rgba(59, 94, 247, 0.4);
+        }
+        50% {
+          box-shadow: 0 4px 25px rgba(59, 94, 247, 0.6);
+        }
+      }
+    </style>
+
+    <button
+      class="calendly-button"
+      onclick="Calendly.initPopupWidget({url: 'https://calendly.com/cohalinkk-marketing/30min?locale=fr'});"
+      aria-label="Prendre rendez-vous"
+    >
+      <svg
+        class="calendly-button-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+        <line x1="16" y1="2" x2="16" y2="6"></line>
+        <line x1="8" y1="2" x2="8" y2="6"></line>
+        <line x1="3" y1="10" x2="21" y2="10"></line>
+      </svg>
+      <span class="calendly-button-text">Prendre rendez-vous</span>
+    </button>
+  </body>
+</html>

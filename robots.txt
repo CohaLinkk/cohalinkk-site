@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://cohalinkk.fr/sitemap.xml
+
+# Optimisations pour les images
+Allow: /assets/
+Allow: /assets/images/
+Allow: /assets/team/
+Allow: /assets/partners/
+
+# Désactiver l'indexation des fichiers techniques
+Disallow: /old_vitrine/
+Disallow: /CNAME
+Disallow: /DNS
+Disallow: /README.md
+
+# Optimisation du crawl
+Crawl-delay: 1
