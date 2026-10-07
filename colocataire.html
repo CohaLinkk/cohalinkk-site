@@ -1597,10 +1597,12 @@
             <!-- Formulaire de contact -->
             <div>
               <form
-                action="https://cohalinkk.app.n8n.cloud/webhook/8e97f7ec-ed9e-4300-8c91-67155c823a6a"
+                action="/api/contact"
                 method="POST"
                 class="space-y-6 form-animation"
               >
+                <!-- Anti-spam : champ piège invisible, doit rester vide -->
+                <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px" />
                 <!-- Champ caché pour le type d'utilisateur -->
                 <input type="hidden" name="profil" value="Colocataire" />
 
@@ -2417,7 +2419,7 @@
         });
 
         // Gestion du formulaire
-        const form = document.querySelector('form[action*="n8n"]');
+        const form = document.querySelector('form[action="/api/contact"]');
         if (form) {
           const confirmationMessage = document.getElementById(
             "confirmation-message"
@@ -2490,7 +2492,7 @@
 
             // Récupérer les données du formulaire
             const formData = new FormData(form);
-            // Consolider la valeur pour n8n: si "Autre" est choisi, envoyer la précision
+            // Consolider la valeur envoyée : si "Autre" est choisi, envoyer la précision
             if (howKnowSelect) {
               const base = howKnowSelect.value || "";
               if (
@@ -2511,9 +2513,9 @@
               }
             }
 
-            // Envoyer les données vers n8n
+            // Envoyer les données vers la fonction Netlify (Brevo)
             fetch(
-              "https://n8n.ilaan.fr/webhook/8e97f7ec-ed9e-4300-8c91-67155c823a6a",
+              "/api/contact",
               {
                 method: "POST",
                 body: formData,
