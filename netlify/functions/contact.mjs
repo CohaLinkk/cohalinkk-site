@@ -89,8 +89,10 @@ export default async (req) => {
   });
 
   if (!res.ok) {
-    console.error("Erreur Brevo", res.status, await res.text());
-    return new Response("Erreur d'envoi", { status: 502 });
+    // Le détail Brevo (code + message, jamais la clé) est renvoyé pour faciliter le diagnostic.
+    const detail = await res.text();
+    console.error("Erreur Brevo", res.status, detail);
+    return new Response(`Erreur d'envoi (Brevo ${res.status}) : ${detail}`, { status: 502 });
   }
 
   return new Response("ok");
