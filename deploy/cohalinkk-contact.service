@@ -1,0 +1,22 @@
+[Unit]
+Description=CohaLinkk - formulaire de contact (Brevo)
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/cohalinkk
+EnvironmentFile=/etc/cohalinkk/contact.env
+ExecStart=/usr/bin/node deploy/server.mjs
+Restart=on-failure
+RestartSec=5
+
+# Durcissement
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

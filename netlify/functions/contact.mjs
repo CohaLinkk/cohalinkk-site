@@ -1,6 +1,7 @@
 // Reçoit les formulaires du site et envoie un email via l'API Brevo.
-// La clé API reste côté serveur : variables d'environnement Netlify
-//   BREVO_API_KEY   clé API Brevo (Site configuration > Environment variables)
+// La clé API reste côté serveur : variables d'environnement
+// (sur le VPS : /etc/cohalinkk/contact.env, chargé par deploy/server.mjs via systemd)
+//   BREVO_API_KEY   clé API Brevo
 //   CONTACT_TO      adresse qui reçoit les messages
 //   CONTACT_SENDER  expéditeur validé dans Brevo
 
