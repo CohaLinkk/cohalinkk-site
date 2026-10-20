@@ -93,7 +93,7 @@ export default async (req) => {
     // Le détail Brevo (code + message, jamais la clé) est renvoyé pour faciliter le diagnostic.
     const detail = await res.text();
     console.error("Erreur Brevo", res.status, detail);
-    return new Response(`Erreur d'envoi (Brevo ${res.status}) : ${detail}`, { status: 502 });
+    return new Response("Erreur lors de l'envoi du message", { status: 502 });
   }
 
   return new Response("ok");
